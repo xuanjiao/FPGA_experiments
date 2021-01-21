@@ -1,0 +1,11 @@
+//! **************************************************************************
+// Written by: Map O.76xd on Fri Jul 07 16:59:33 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "reset_n" LOCATE = SITE "E7" LEVEL 1;
+COMP "clk" LOCATE = SITE "AG18" LEVEL 1;
+COMP "RXD" LOCATE = SITE "AG15" LEVEL 1;
+COMP "TXD" LOCATE = SITE "AF19" LEVEL 1;
+SCHEMATIC END;
+

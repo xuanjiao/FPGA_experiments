@@ -1,0 +1,88 @@
+
+****** PlanAhead v13.3
+  **** Build 147507 by hdbuild on Tue Oct  4 19:03:28 MDT 2011
+    ** Copyright 1986-1999, 2001-2011 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common-78] Attempting to get a license: PlanAhead
+INFO: [Common-82] Got a license: PlanAhead
+INFO: [Common-86] Your PlanAhead license expires in -1680 day(s)
+INFO: [Device-25] Loading parts and site information from C:/Programme/Xilinx/ISE_DS/PlanAhead\parts\arch.xmlParsing RTL primitives file [C:/Programme/Xilinx/ISE_DS/PlanAhead\parts\xilinx\rtl\prims\rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Programme/Xilinx/ISE_DS/PlanAhead\parts\xilinx\rtl\prims\rtl_prims.xml]
+start_gui
+starting gui ...
+source {S:/FPGA_Prak/Termin Freitag/UART_Module_windows/pa.fromHdl.tcl}
+# create_project -name UART_Module -dir "S:/FPGA_Prak/Termin Freitag/UART_Module_windows/planAhead_run_1" -part xc5vlx50tff1136-1
+Parsing template File [C:/Programme/Xilinx/ISE_DS/ISE\data\projnav\templates\verilog.xml].
+Finished parsing template File [C:/Programme/Xilinx/ISE_DS/ISE\data\projnav\templates\verilog.xml].
+Parsing template File [C:/Programme/Xilinx/ISE_DS/ISE\data\projnav\templates\vhdl.xml].
+Finished parsing template File [C:/Programme/Xilinx/ISE_DS/ISE\data\projnav\templates\vhdl.xml].
+Parsing template File [C:/Programme/Xilinx/ISE_DS/ISE\data\projnav\templates\ucf.xml].
+Finished parsing template File [C:/Programme/Xilinx/ISE_DS/ISE\data\projnav\templates\ucf.xml].
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property top UART_Echo $srcset
+# set_property target_constrs_file "UART_Echo.ucf" [current_fileset -constrset]
+Adding file 'S:\FPGA_Prak\Termin Freitag\UART_Module_windows\UART_Echo.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {Transmitter.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Receiver.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Baudratengenerator.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {UART_Module.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {UART_Echo.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# add_files [list {UART_Echo.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc5vlx50tff1136-1
+INFO: [PlanAhead-58] Using Verific elaboration
+Parsing VHDL file "C:/Programme/Xilinx/ISE_DS/PlanAhead\parts\xilinx\rtl\lib\synplify\synattr.vhd" into library synplify
+Analyzing Verilog file "S:\FPGA_Prak\Termin Freitag\UART_Module_windows\Transmitter.v" into library work
+Analyzing Verilog file "S:\FPGA_Prak\Termin Freitag\UART_Module_windows\Receiver.v" into library work
+Analyzing Verilog file "S:\FPGA_Prak\Termin Freitag\UART_Module_windows\Baudratengenerator.v" into library work
+Analyzing Verilog file "S:\FPGA_Prak\Termin Freitag\UART_Module_windows\UART_Module.v" into library work
+Analyzing Verilog file "S:\FPGA_Prak\Termin Freitag\UART_Module_windows\UART_Echo.v" into library work
+INFO: [PlanAhead-430] Reading macro library C:/Programme/Xilinx/ISE_DS/PlanAhead\./parts/xilinx/virtex5/virtex5lx/hd_int_macros.edn
+Parsing EDIF File [C:/Programme/Xilinx/ISE_DS/PlanAhead\./parts/xilinx/virtex5/virtex5lx/hd_int_macros.edn]
+Finished Parsing EDIF File [C:/Programme/Xilinx/ISE_DS/PlanAhead\./parts/xilinx/virtex5/virtex5lx/hd_int_macros.edn]
+INFO: [Device-21] Reading bus macro file C:/Programme/Xilinx/ISE_DS/PlanAhead\./parts/xilinx/virtex5/pr_bus_macros.xmlLoading clock regions from C:/Programme/Xilinx/ISE_DS/PlanAhead\parts/xilinx/virtex5/virtex5lxt/xc5vlx50t/ClockRegion.xml
+Loading clock buffers from C:/Programme/Xilinx/ISE_DS/PlanAhead\parts/xilinx/virtex5/virtex5lxt/xc5vlx50t/ClockBuffers.xml
+Loading package from C:/Programme/Xilinx/ISE_DS/PlanAhead\parts/xilinx/virtex5/virtex5lxt/xc5vlx50t/ff1136/Package.xml
+Loading io standards from C:/Programme/Xilinx/ISE_DS/PlanAhead\./parts/xilinx/virtex5/IOStandards.xml
+INFO: [Device-19] Loading pkg sso from C:/Programme/Xilinx/ISE_DS/PlanAhead\parts/xilinx/virtex5/virtex5lxt/xc5vlx50t/ff1136/SSORules.xml
+Loading list of drcs for the architecture : C:/Programme/Xilinx/ISE_DS/PlanAhead\./parts/xilinx/virtex5/drc.xml
+Parsing UCF File [S:\FPGA_Prak\Termin Freitag\UART_Module_windows\UART_Echo.ucf]
+Finished Parsing UCF File [S:\FPGA_Prak\Termin Freitag\UART_Module_windows\UART_Echo.ucf]
+INFO: [PlanAhead-566] Unisim Transformation Summary:
+No Unisim elements were transformed.open_rtl_design: Time (s): 21.641w.  Memory (MB): 312.676p 105.371g
+startgroup
+startgroup
+set_property loc IOB_X2Y120 [get_ports reset_n]
+set_property loc IOB_X2Y120 [get_ports reset_n]
+endgroup
+endgroup
+save_design
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x3be60c3d, pid=3844, tid=3560
+#
+# JRE version: 6.0_21-b07
+# Java VM: Java HotSpot(TM) Server VM (17.0-b17 mixed mode windows-x86 )
+# Problematic frame:
+# C  0x3be60c3d
+#
+# An error report file with more information is saved as:
+# S:\FPGA_Prak\Termin Freitag\UART_Module_windows\hs_err_pid3844.log
+#
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+Batchvorgang abbrechen (J/N)? 

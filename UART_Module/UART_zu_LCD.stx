@@ -1,0 +1,59 @@
+Release 13.3 - xst O.76xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to S:/FPGA_Prak/Termin Freitag/UART_Module/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.59 secs
+ 
+--> Parameter xsthdpdir set to S:/FPGA_Prak/Termin Freitag/UART_Module/xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.59 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Entprellungs.v" in library work
+Compiling verilog file "WriteAsciiLCD.v" in library work
+Module <Entprellungs> compiled
+Compiling verilog file "Transmitter.v" in library work
+Module <WriteAsciiLCD> compiled
+Compiling verilog file "Taktteiler.v" in library work
+Module <Transmitter> compiled
+Compiling verilog file "Receiver.v" in library work
+Module <Taktteiler> compiled
+Compiling verilog file "Mux21.v" in library work
+Module <Receiver> compiled
+Compiling verilog file "InitLCD.v" in library work
+Module <Mux21> compiled
+Compiling verilog file "Baudratengenerator.v" in library work
+Module <InitLCD> compiled
+Compiling verilog file "UART_Module.v" in library work
+Module <Baudratengenerator> compiled
+Compiling verilog file "LCD_Module.v" in library work
+Module <UART_Module> compiled
+Compiling verilog file "Controller.v" in library work
+Module <LCD_Module> compiled
+Compiling verilog file "UART_zu_LCD.v" in library work
+Module <Controller> compiled
+Module <UART_zu_LCD> compiled
+No errors in compilation
+Analysis of file <"UART_zu_LCD.prj"> succeeded.
+ 
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 1.03 secs
+ 
+--> 
+
+Total memory usage is 129192 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

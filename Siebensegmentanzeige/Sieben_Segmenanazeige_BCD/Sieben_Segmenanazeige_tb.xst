@@ -1,0 +1,5 @@
+set -tmpdir "F:/FPGA/Sieben_Segmenanazeige/xst/projnav.tmp"
+set -xsthdpdir "F:/FPGA/Sieben_Segmenanazeige/xst"
+elaborate
+-ifn Sieben_Segmenanazeige_tb.prj
+-ifmt mixed

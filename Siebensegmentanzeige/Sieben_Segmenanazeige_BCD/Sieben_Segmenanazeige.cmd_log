@@ -1,0 +1,29 @@
+xst -intstyle ise -ifn "F:/FPGA/Sieben_Segmenanazeige/Sieben_Segmenanazeige.xst" -ofn "F:/FPGA/Sieben_Segmenanazeige/Sieben_Segmenanazeige.syr" 
+xst -intstyle ise -ifn "S:/FPGA_Prak/Termin Freitag/7-seg/Sieben_Segmenanazeige/Sieben_Segmenanazeige.xst" -ofn "S:/FPGA_Prak/Termin Freitag/7-seg/Sieben_Segmenanazeige/Sieben_Segmenanazeige.syr" 
+xst -intstyle ise -ifn "S:/FPGA_Prak/Termin Freitag/7-seg/Sieben_Segmenanazeige/Sieben_Segmenanazeige.xst" -ofn "S:/FPGA_Prak/Termin Freitag/7-seg/Sieben_Segmenanazeige/Sieben_Segmenanazeige.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Sieben_Segmenanazeige.ucf -p xc5vlx50t-ff1136-2 "Sieben_Segmenanazeige.ngc" Sieben_Segmenanazeige.ngd  
+map -intstyle ise -p xc5vlx50t-ff1136-2 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o Sieben_Segmenanazeige_map.ncd Sieben_Segmenanazeige.ngd Sieben_Segmenanazeige.pcf 
+par -w -intstyle ise -ol high -mt off Sieben_Segmenanazeige_map.ncd Sieben_Segmenanazeige.ncd Sieben_Segmenanazeige.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Sieben_Segmenanazeige.twx Sieben_Segmenanazeige.ncd -o Sieben_Segmenanazeige.twr Sieben_Segmenanazeige.pcf -ucf Sieben_Segmenanazeige.ucf 
+bitgen -intstyle ise -f Sieben_Segmenanazeige.ut Sieben_Segmenanazeige.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Sieben_Segmenanazeige.ucf -p xc5vlx50t-ff1136-2 "Sieben_Segmenanazeige.ngc" Sieben_Segmenanazeige.ngd  
+map -intstyle ise -p xc5vlx50t-ff1136-2 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o Sieben_Segmenanazeige_map.ncd Sieben_Segmenanazeige.ngd Sieben_Segmenanazeige.pcf 
+par -w -intstyle ise -ol high -mt off Sieben_Segmenanazeige_map.ncd Sieben_Segmenanazeige.ncd Sieben_Segmenanazeige.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Sieben_Segmenanazeige.twx Sieben_Segmenanazeige.ncd -o Sieben_Segmenanazeige.twr Sieben_Segmenanazeige.pcf -ucf Sieben_Segmenanazeige.ucf 
+bitgen -intstyle ise -f Sieben_Segmenanazeige.ut Sieben_Segmenanazeige.ncd 
+xst -intstyle ise -ifn "S:/FPGA_Prak/Termin Freitag/Sieben_Segmenanazeige_BCD/Sieben_Segmenanazeige.xst" -ofn "S:/FPGA_Prak/Termin Freitag/Sieben_Segmenanazeige_BCD/Sieben_Segmenanazeige.syr" 
+xst -intstyle ise -ifn "S:/FPGA_Prak/Termin Freitag/Sieben_Segmenanazeige_BCD/Sieben_Segmenanazeige.xst" -ofn "S:/FPGA_Prak/Termin Freitag/Sieben_Segmenanazeige_BCD/Sieben_Segmenanazeige.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Sieben_Segmenanazeige.ucf -p xc5vlx50t-ff1136-2 "Sieben_Segmenanazeige.ngc" Sieben_Segmenanazeige.ngd  
+xst -intstyle ise -ifn "S:/FPGA_Prak/Termin Freitag/Sieben_Segmenanazeige_BCD/Sieben_Segmenanazeige.xst" -ofn "S:/FPGA_Prak/Termin Freitag/Sieben_Segmenanazeige_BCD/Sieben_Segmenanazeige.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Sieben_Segmenanazeige.ucf -p xc5vlx50t-ff1136-2 "Sieben_Segmenanazeige.ngc" Sieben_Segmenanazeige.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx50t-ff1136-2 "Sieben_Segmenanazeige.ngc" Sieben_Segmenanazeige.ngd  
+map -intstyle ise -p xc5vlx50t-ff1136-2 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o Sieben_Segmenanazeige_map.ncd Sieben_Segmenanazeige.ngd Sieben_Segmenanazeige.pcf 
+par -w -intstyle ise -ol high -mt off Sieben_Segmenanazeige_map.ncd Sieben_Segmenanazeige.ncd Sieben_Segmenanazeige.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Sieben_Segmenanazeige.twx Sieben_Segmenanazeige.ncd -o Sieben_Segmenanazeige.twr Sieben_Segmenanazeige.pcf 
+bitgen -intstyle ise -f Sieben_Segmenanazeige.ut Sieben_Segmenanazeige.ncd 
+xst -intstyle ise -ifn "S:/FPGA_Prak/Termin Freitag/Sieben_Segmenanazeige_BCD/Sieben_Segmenanazeige.xst" -ofn "S:/FPGA_Prak/Termin Freitag/Sieben_Segmenanazeige_BCD/Sieben_Segmenanazeige.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx50t-ff1136-2 "Sieben_Segmenanazeige.ngc" Sieben_Segmenanazeige.ngd  
+map -intstyle ise -p xc5vlx50t-ff1136-2 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o Sieben_Segmenanazeige_map.ncd Sieben_Segmenanazeige.ngd Sieben_Segmenanazeige.pcf 
+par -w -intstyle ise -ol high -mt off Sieben_Segmenanazeige_map.ncd Sieben_Segmenanazeige.ncd Sieben_Segmenanazeige.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Sieben_Segmenanazeige.twx Sieben_Segmenanazeige.ncd -o Sieben_Segmenanazeige.twr Sieben_Segmenanazeige.pcf 
+bitgen -intstyle ise -f Sieben_Segmenanazeige.ut Sieben_Segmenanazeige.ncd 

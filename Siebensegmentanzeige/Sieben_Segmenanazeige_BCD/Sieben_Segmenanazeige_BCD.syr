@@ -1,0 +1,423 @@
+Release 13.3 - xst O.76xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 1.25 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 1.27 secs
+ 
+--> Reading design: Sieben_Segmenanazeige_BCD.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Sieben_Segmenanazeige_BCD.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Sieben_Segmenanazeige_BCD"
+Output Format                      : NGC
+Target Device                      : xc5vlx50t-2-ff1136
+
+---- Source Options
+Top Module Name                    : Sieben_Segmenanazeige_BCD
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Off
+Reduce Control Sets                : Off
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Sieben_Segmenanzeige_BCD.v" in library work
+Module <Sieben_Segmenanazeige_BCD> compiled
+No errors in compilation
+Analysis of file <"Sieben_Segmenanazeige_BCD.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <Sieben_Segmenanazeige_BCD> in library <work> with parameters.
+	A_OUT = "0001000"
+	B_OUT = "1100000"
+	C_OUT = "0110001"
+	D_OUT = "1000010"
+	EIGHT = "1000"
+	EIGHT_OUT = "0000000"
+	ELEVEN = "1011"
+	E_OUT = "0110000"
+	FIFTEEN = "1111"
+	FIVE = "0101"
+	FIVE_OUT = "0100100"
+	FOUR = "0100"
+	FOURTEEN = "1110"
+	FOUR_OUT = "1001100"
+	F_OUT = "0111000"
+	LEER = "0000"
+	LEER_OUT = "1111111"
+	NINE = "1001"
+	NINE_OUT = "0000100"
+	ONE = "0001"
+	ONE_OUT = "1001111"
+	SEVEN = "0111"
+	SEVEN_OUT = "0001111"
+	SIX = "0110"
+	SIX_OUT = "0100000"
+	TEN = "1010"
+	THIRTEEN = "1101"
+	THREE = "0011"
+	THREE_OUT = "0000110"
+	TWELVE = "1100"
+	TWO = "0010"
+	TWO_OUT = "0010010"
+	ZERO = "0000"
+	ZERO_OUT = "0000001"
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <Sieben_Segmenanazeige_BCD>.
+	A_OUT = 7'b0001000
+	B_OUT = 7'b1100000
+	C_OUT = 7'b0110001
+	D_OUT = 7'b1000010
+	EIGHT = 4'b1000
+	EIGHT_OUT = 7'b0000000
+	ELEVEN = 4'b1011
+	E_OUT = 7'b0110000
+	FIFTEEN = 4'b1111
+	FIVE = 4'b0101
+	FIVE_OUT = 7'b0100100
+	FOUR = 4'b0100
+	FOURTEEN = 4'b1110
+	FOUR_OUT = 7'b1001100
+	F_OUT = 7'b0111000
+	LEER = 4'b0000
+	LEER_OUT = 7'b1111111
+	NINE = 4'b1001
+	NINE_OUT = 7'b0000100
+	ONE = 4'b0001
+	ONE_OUT = 7'b1001111
+	SEVEN = 4'b0111
+	SEVEN_OUT = 7'b0001111
+	SIX = 4'b0110
+	SIX_OUT = 7'b0100000
+	TEN = 4'b1010
+	THIRTEEN = 4'b1101
+	THREE = 4'b0011
+	THREE_OUT = 7'b0000110
+	TWELVE = 4'b1100
+	TWO = 4'b0010
+	TWO_OUT = 7'b0010010
+	ZERO = 4'b0000
+	ZERO_OUT = 7'b0000001
+Module <Sieben_Segmenanazeige_BCD> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Sieben_Segmenanazeige_BCD>.
+    Related source file is "Sieben_Segmenanzeige_BCD.v".
+    Found 16x7-bit ROM for signal <out0$mux0000> created at line 78.
+    Found 16x7-bit ROM for signal <out1$mux0000> created at line 103.
+    Found 7-bit register for signal <out0>.
+    Found 7-bit register for signal <out1>.
+    Summary:
+	inferred   2 ROM(s).
+	inferred  14 D-type flip-flop(s).
+Unit <Sieben_Segmenanazeige_BCD> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 16x7-bit ROM                                          : 2
+# Registers                                            : 2
+ 7-bit register                                        : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 16x7-bit ROM                                          : 2
+# Registers                                            : 14
+ Flip-Flops                                            : 14
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Sieben_Segmenanazeige_BCD> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Sieben_Segmenanazeige_BCD, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 14
+ Flip-Flops                                            : 14
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Sieben_Segmenanazeige_BCD.ngr
+Top Level Output File Name         : Sieben_Segmenanazeige_BCD
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 24
+
+Cell Usage :
+# BELS                             : 15
+#      INV                         : 1
+#      LUT4                        : 14
+# FlipFlops/Latches                : 14
+#      FDP                         : 14
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 23
+#      IBUF                        : 9
+#      OBUF                        : 14
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 5vlx50tff1136-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice LUTs:                   15  out of  28800     0%  
+    Number used as Logic:                15  out of  28800     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     15
+   Number with an unused Flip Flop:      15  out of     15   100%  
+   Number with an unused LUT:             0  out of     15     0%  
+   Number of fully used LUT-FF pairs:     0  out of     15     0%  
+   Number of unique control sets:         1
+
+IO Utilization: 
+ Number of IOs:                          24
+ Number of bonded IOBs:                  24  out of    480     5%  
+    IOB Flip Flops/Latches:              14
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 14    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset_n_inv(reset_n_inv1_INV_0:O)  | NONE(out0_0)           | 14    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 1.470ns
+   Maximum output required time after clock: 2.826ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 56 / 14
+-------------------------------------------------------------------------
+Offset:              1.470ns (Levels of Logic = 2)
+  Source:            in0<2> (PAD)
+  Destination:       out0_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: in0<2> to out0_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             7   0.694   0.690  in0_2_IBUF (in0_2_IBUF)
+     LUT4:I0->O            1   0.086   0.000  Mrom_out0_mux0000111 (Mrom_out0_mux00001)
+     FDP:D                    -0.022          out0_1
+    ----------------------------------------
+    Total                      1.470ns (0.780ns logic, 0.690ns route)
+                                       (53.1% logic, 46.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 14 / 14
+-------------------------------------------------------------------------
+Offset:              2.826ns (Levels of Logic = 1)
+  Source:            out0_6 (FF)
+  Destination:       out0<6> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: out0_6 to out0<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q              1   0.396   0.286  out0_6 (out0_6)
+     OBUF:I->O                 2.144          out0_6_OBUF (out0<6>)
+    ----------------------------------------
+    Total                      2.826ns (2.540ns logic, 0.286ns route)
+                                       (89.9% logic, 10.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 11.20 secs
+ 
+--> 
+
+Total memory usage is 161052 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

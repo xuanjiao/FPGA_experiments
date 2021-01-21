@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "S:/FPGA_Prak/Termin Freitag/LCD_Module/LCD_Module.xst" -ofn "S:/FPGA_Prak/Termin Freitag/LCD_Module/LCD_Module.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Entprellungs_tb.ucf -p xc5vlx50t-ff1136-1 "LCD_Module.ngc" LCD_Module.ngd  
+map -intstyle ise -p xc5vlx50t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o LCD_Module_map.ncd LCD_Module.ngd LCD_Module.pcf 
+par -w -intstyle ise -ol high -mt off LCD_Module_map.ncd LCD_Module.ncd LCD_Module.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml LCD_Module.twx LCD_Module.ncd -o LCD_Module.twr LCD_Module.pcf -ucf Entprellungs_tb.ucf 
+bitgen -intstyle ise -f LCD_Module.ut LCD_Module.ncd 
+xst -intstyle ise -ifn "S:/FPGA_Prak/Termin Freitag/LCD_Module/LCD_Module.xst" -ofn "S:/FPGA_Prak/Termin Freitag/LCD_Module/LCD_Module.syr" 

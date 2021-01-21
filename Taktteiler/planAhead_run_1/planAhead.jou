@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# PlanAhead v13.3
+# Build 147507 by hdbuild on Tue Oct  4 19:03:28 MDT 2011
+# Start of session at: Fri May 19 10:05:13 2017
+# Process ID: 3612
+# Log file: S:/FPGA_Prak/Termin Freitag/Taktteiler/planAhead_run_1/planAhead.log
+# Journal file: S:/FPGA_Prak/Termin Freitag/Taktteiler/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {S:/FPGA_Prak/Termin Freitag/Taktteiler/pa.fromHdl.tcl}
+startgroup
+set_property loc IOB_X0Y137 [get_ports {out[9]}]
+endgroup
+startgroup
+set_property DRIVE {} [get_ports [list {out[6]}]]
+endgroup
+save_design
+exit
+stop_gui

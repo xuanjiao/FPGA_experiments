@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="S:/FPGA_Prak/Termin Freitag/UART_Module_windows/UART_Echo_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="UART_Echo_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="16" />
+   <wvobject fp_name="/UART_Echo_tb/TXD" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">TXD</obj_property>
+      <obj_property name="ObjectShortName">TXD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/UART_Echo_tb/RXD" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">RXD</obj_property>
+      <obj_property name="ObjectShortName">RXD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/UART_Echo_tb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/UART_Echo_tb/reset_n" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset_n</obj_property>
+      <obj_property name="ObjectShortName">reset_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/UART_Echo_tb/echo/uart/tra/tx_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tx_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/UART_Echo_tb/echo/uart/rec/rx_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rx_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/UART_Echo_tb/echo/uart/rec/state" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">state[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/UART_Echo_tb/echo/buffer" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">buffer[7:0]</obj_property>
+      <obj_property name="ObjectShortName">buffer[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/UART_Echo_tb/echo/uart/rec/rx_complete_flag" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rx_complete_flag</obj_property>
+      <obj_property name="ObjectShortName">rx_complete_flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/UART_Echo_tb/echo/uart/rec/rx_complete_del_flag" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rx_complete_del_flag</obj_property>
+      <obj_property name="ObjectShortName">rx_complete_del_flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/UART_Echo_tb/echo/uart/tx_start" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tx_start</obj_property>
+      <obj_property name="ObjectShortName">tx_start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/UART_Echo_tb/echo/rx_complete_flag" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rx_complete_flag</obj_property>
+      <obj_property name="ObjectShortName">rx_complete_flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/UART_Echo_tb/echo/tx_busy" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tx_busy</obj_property>
+      <obj_property name="ObjectShortName">tx_busy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/UART_Echo_tb/echo/uart/tx_complete_flag" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tx_complete_flag</obj_property>
+      <obj_property name="ObjectShortName">tx_complete_flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/UART_Echo_tb/echo/tx_busy_last" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tx_busy_last</obj_property>
+      <obj_property name="ObjectShortName">tx_busy_last</obj_property>
+   </wvobject>
+   <wvobject fp_name="/UART_Echo_tb/echo/uart/tra/state" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">state[3:0]</obj_property>
+   </wvobject>
+</wave_config>

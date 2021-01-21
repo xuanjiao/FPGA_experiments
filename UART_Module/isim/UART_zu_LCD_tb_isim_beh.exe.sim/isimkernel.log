@@ -1,0 +1,10 @@
+Command line:
+   UART_zu_LCD_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  2273
+
+Fri Jul 07 19:20:12 2017
+
+
+ Elaboration Time: 0.109375 sec

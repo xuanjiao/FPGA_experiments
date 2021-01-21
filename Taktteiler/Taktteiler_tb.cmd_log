@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "S:/FPGA_Prak/Termin Freitag/Taktteiler/Taktteiler_tb.xst" -ofn "S:/FPGA_Prak/Termin Freitag/Taktteiler/Taktteiler_tb.syr" 

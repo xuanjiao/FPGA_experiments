@@ -1,0 +1,6 @@
+verilog work "Entprellungs.v"
+verilog work "WriteAsciiLCD.v"
+verilog work "Taktteiler.v"
+verilog work "Mux21.v"
+verilog work "InitLCD.v"
+verilog work "LCD_Module.v"

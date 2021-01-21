@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "S:/FPGA_Prak/Termin Freitag/Taktteiler/Taktteiler_tb_isim_beh.exe" -prj "S:/FPGA_Prak/Termin Freitag/Taktteiler/Taktteiler_tb_beh.prj" "work.Taktteiler_tb" "work.glbl" 

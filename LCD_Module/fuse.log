@@ -1,0 +1,31 @@
+Running: C:\Programme\Xilinx\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o S:/FPGA_Prak/Termin Freitag/LCD_Module/LCD_Module_tb_isim_beh.exe -prj S:/FPGA_Prak/Termin Freitag/LCD_Module/LCD_Module_tb_beh.prj work.LCD_Module_tb work.glbl 
+ISim O.76xd (signature 0x2f00eba5)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Analyzing Verilog file "S:/FPGA_Prak/Termin Freitag/LCD_Module/Entprellungs.v" into library work
+Analyzing Verilog file "S:/FPGA_Prak/Termin Freitag/LCD_Module/WriteAsciiLCD.v" into library work
+Analyzing Verilog file "S:/FPGA_Prak/Termin Freitag/LCD_Module/Taktteiler.v" into library work
+Analyzing Verilog file "S:/FPGA_Prak/Termin Freitag/LCD_Module/Mux21.v" into library work
+Analyzing Verilog file "S:/FPGA_Prak/Termin Freitag/LCD_Module/InitLCD.v" into library work
+Analyzing Verilog file "S:/FPGA_Prak/Termin Freitag/LCD_Module/LCD_Module.v" into library work
+Analyzing Verilog file "S:/FPGA_Prak/Termin Freitag/LCD_Module/LCD_Module_tb.v" into library work
+Analyzing Verilog file "C:/Programme/Xilinx/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 64764 KB
+Fuse CPU Usage: 1343 ms
+Compiling module Taktteiler
+Compiling module Entprellungs
+Compiling module WriteAsciiLCD
+Compiling module InitLCD
+Compiling module Mux21
+Compiling module LCD_Module
+Compiling module LCD_Module_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 8 Verilog Units
+Built simulation executable S:/FPGA_Prak/Termin Freitag/LCD_Module/LCD_Module_tb_isim_beh.exe
+Fuse Memory Usage: 90312 KB
+Fuse CPU Usage: 1530 ms

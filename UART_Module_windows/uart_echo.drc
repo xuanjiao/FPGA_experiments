@@ -1,0 +1,8 @@
+Release 13.3 Drc O.76xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Fri Jul 07 17:02:00 2017
+
+drc -z UART_Echo.ncd UART_Echo.pcf
+
+DRC detected 0 errors and 0 warnings.

@@ -1,0 +1,20 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "CS" LOC = AD11;
+NET "MISO" LOC = AM13;
+NET "MOSI" LOC = AD9;
+NET "SCLK" LOC = AM12;
+NET "SW[0]" LOC = J19;
+NET "SW[1]" LOC = L18;
+NET "SW[2]" LOC = K18;
+NET "clk" LOC = AG18;
+NET "led_8bitOutput[0]" LOC = AG8;
+NET "led_8bitOutput[1]" LOC = AH8;
+NET "led_8bitOutput[2]" LOC = AH9;
+NET "led_8bitOutput[3]" LOC = AG10;
+NET "led_8bitOutput[4]" LOC = AH10;
+NET "led_8bitOutput[5]" LOC = AG11;
+NET "led_8bitOutput[6]" LOC = AF11;
+NET "led_8bitOutput[7]" LOC = AE11;
+NET "reset_n" LOC = E7;

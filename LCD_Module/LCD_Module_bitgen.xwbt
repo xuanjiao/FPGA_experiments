@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=S:\FPGA_Prak\Termin Freitag\LCD_Module\LCD_Module.ncd
+OUTFILE=S:\FPGA_Prak\Termin Freitag\LCD_Module\LCD_Module.bit
+FAMILY=Virtex5
+PART=xc5vlx50t-1ff1136
+WORKINGDIR=S:\FPGA_Prak\Termin Freitag\LCD_Module
+LICENSE=ISE
+USER_INFO=208275213_208276312_208266657_921

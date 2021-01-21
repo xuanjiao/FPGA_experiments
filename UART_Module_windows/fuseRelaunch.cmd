@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "S:/FPGA_Prak/Termin Freitag/UART_Module_windows/UART_Echo_tb_isim_beh.exe" -prj "S:/FPGA_Prak/Termin Freitag/UART_Module_windows/UART_Echo_tb_beh.prj" "work.UART_Echo_tb" "work.glbl" 

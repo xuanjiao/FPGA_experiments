@@ -1,0 +1,24 @@
+//! **************************************************************************
+// Written by: Map O.76xd on Wed Jul 26 10:29:38 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "CS" LOCATE = SITE "AD11" LEVEL 1;
+COMP "clk" LOCATE = SITE "AG18" LEVEL 1;
+COMP "led_8bitOutput<0>" LOCATE = SITE "AG8" LEVEL 1;
+COMP "led_8bitOutput<1>" LOCATE = SITE "AH8" LEVEL 1;
+COMP "led_8bitOutput<2>" LOCATE = SITE "AH9" LEVEL 1;
+COMP "led_8bitOutput<3>" LOCATE = SITE "AG10" LEVEL 1;
+COMP "led_8bitOutput<4>" LOCATE = SITE "AH10" LEVEL 1;
+COMP "led_8bitOutput<5>" LOCATE = SITE "AG11" LEVEL 1;
+COMP "led_8bitOutput<6>" LOCATE = SITE "AF11" LEVEL 1;
+COMP "led_8bitOutput<7>" LOCATE = SITE "AE11" LEVEL 1;
+COMP "MISO" LOCATE = SITE "AM13" LEVEL 1;
+COMP "SCLK" LOCATE = SITE "AM12" LEVEL 1;
+COMP "MOSI" LOCATE = SITE "AD9" LEVEL 1;
+COMP "SW<0>" LOCATE = SITE "J19" LEVEL 1;
+COMP "SW<1>" LOCATE = SITE "L18" LEVEL 1;
+COMP "SW<2>" LOCATE = SITE "K18" LEVEL 1;
+COMP "reset_n" LOCATE = SITE "E7" LEVEL 1;
+SCHEMATIC END;
+

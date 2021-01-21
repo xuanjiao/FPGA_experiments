@@ -1,0 +1,30 @@
+xst -intstyle ise -ifn "S:/FPGA_Prak/Termin Freitag/UART_Module_windows/UART_Echo.xst" -ofn "S:/FPGA_Prak/Termin Freitag/UART_Module_windows/UART_Echo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx50t-ff1136-1 "UART_Echo.ngc" UART_Echo.ngd  
+map -intstyle ise -p xc5vlx50t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o UART_Echo_map.ncd UART_Echo.ngd UART_Echo.pcf 
+par -w -intstyle ise -ol high -mt off UART_Echo_map.ncd UART_Echo.ncd UART_Echo.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml UART_Echo.twx UART_Echo.ncd -o UART_Echo.twr UART_Echo.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UART_Echo.ucf -p xc5vlx50t-ff1136-1 "UART_Echo.ngc" UART_Echo.ngd  
+map -intstyle ise -p xc5vlx50t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o UART_Echo_map.ncd UART_Echo.ngd UART_Echo.pcf 
+par -w -intstyle ise -ol high -mt off UART_Echo_map.ncd UART_Echo.ncd UART_Echo.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml UART_Echo.twx UART_Echo.ncd -o UART_Echo.twr UART_Echo.pcf -ucf UART_Echo.ucf 
+bitgen -intstyle ise -f UART_Echo.ut UART_Echo.ncd 
+xst -intstyle ise -ifn "S:/FPGA_Prak/Termin Freitag/UART_Module_windows/UART_Echo.xst" -ofn "S:/FPGA_Prak/Termin Freitag/UART_Module_windows/UART_Echo.syr" 
+xst -intstyle ise -ifn "S:/FPGA_Prak/Termin Freitag/UART_Module_windows/UART_Echo.xst" -ofn "S:/FPGA_Prak/Termin Freitag/UART_Module_windows/UART_Echo.syr" 
+xst -intstyle ise -ifn "S:/FPGA_Prak/Termin Freitag/UART_Module_windows/UART_Echo.xst" -ofn "S:/FPGA_Prak/Termin Freitag/UART_Module_windows/UART_Echo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UART_Echo.ucf -p xc5vlx50t-ff1136-1 "UART_Echo.ngc" UART_Echo.ngd  
+map -intstyle ise -p xc5vlx50t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o UART_Echo_map.ncd UART_Echo.ngd UART_Echo.pcf 
+par -w -intstyle ise -ol high -mt off UART_Echo_map.ncd UART_Echo.ncd UART_Echo.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml UART_Echo.twx UART_Echo.ncd -o UART_Echo.twr UART_Echo.pcf -ucf UART_Echo.ucf 
+bitgen -intstyle ise -f UART_Echo.ut UART_Echo.ncd 
+bitgen -intstyle ise -f UART_Echo.ut UART_Echo.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UART_Echo.ucf -p xc5vlx50t-ff1136-1 "UART_Echo.ngc" UART_Echo.ngd  
+map -intstyle ise -p xc5vlx50t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o UART_Echo_map.ncd UART_Echo.ngd UART_Echo.pcf 
+par -w -intstyle ise -ol high -mt off UART_Echo_map.ncd UART_Echo.ncd UART_Echo.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml UART_Echo.twx UART_Echo.ncd -o UART_Echo.twr UART_Echo.pcf -ucf UART_Echo.ucf 
+bitgen -intstyle ise -f UART_Echo.ut UART_Echo.ncd 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim UART_Echo.ngc UART_Echo_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UART_Echo.ucf -p xc5vlx50t-ff1136-1 "UART_Echo.ngc" UART_Echo.ngd  
+map -intstyle ise -p xc5vlx50t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o UART_Echo_map.ncd UART_Echo.ngd UART_Echo.pcf 
+par -w -intstyle ise -ol high -mt off UART_Echo_map.ncd UART_Echo.ncd UART_Echo.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml UART_Echo.twx UART_Echo.ncd -o UART_Echo.twr UART_Echo.pcf -ucf UART_Echo.ucf 
+bitgen -intstyle ise -f UART_Echo.ut UART_Echo.ncd 

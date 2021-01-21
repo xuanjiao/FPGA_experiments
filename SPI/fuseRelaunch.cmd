@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "S:/FPGA_Prak/Termin Freitag/ADXL345_25.07/ADXL345_HauptModul_tb_isim_beh.exe" -prj "S:/FPGA_Prak/Termin Freitag/ADXL345_25.07/ADXL345_HauptModul_tb_beh.prj" "work.ADXL345_HauptModul_tb" "work.glbl" 

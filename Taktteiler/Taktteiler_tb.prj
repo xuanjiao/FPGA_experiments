@@ -1,0 +1,3 @@
+verilog work "Taktteiler.v"
+verilog work "clock_generator.v"
+verilog work "Taktteiler_tb.v"

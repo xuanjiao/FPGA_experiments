@@ -1,0 +1,64 @@
+#-----------------------------------------------------------
+# PlanAhead v13.3
+# Build 147507 by hdbuild on Tue Oct  4 19:03:28 MDT 2011
+# Start of session at: Tue Jul 25 13:16:51 2017
+# Process ID: 356
+# Log file: S:/FPGA_Prak/Termin Freitag/ADXL345_25.07/planAhead_run_1/planAhead.log
+# Journal file: S:/FPGA_Prak/Termin Freitag/ADXL345_25.07/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {S:/FPGA_Prak/Termin Freitag/ADXL345_25.07/pa.fromHdl.tcl}
+startgroup
+set_property loc IOB_X2Y18 [get_ports CS]
+endgroup
+startgroup
+set_property loc IOB_X2Y34 [get_ports MISO]
+endgroup
+startgroup
+set_property loc IOB_X2Y20 [get_ports MOSI]
+endgroup
+startgroup
+set_property loc IOB_X2Y27 [get_ports SCLK]
+endgroup
+startgroup
+set_property loc IOB_X1Y67 [get_ports clk]
+endgroup
+startgroup
+set_property loc IOB_X2Y120 [get_ports reset_n]
+endgroup
+startgroup
+set_property loc IOB_X1Y172 [get_ports {SW[0]}]
+endgroup
+startgroup
+set_property loc IOB_X1Y176 [get_ports {SW[1]}]
+endgroup
+startgroup
+set_property loc IOB_X1Y173 [get_ports {SW[2]}]
+endgroup
+startgroup
+set_property loc IOB_X2Y3 [get_ports {led_8bitOutput[0]}]
+endgroup
+startgroup
+set_property loc IOB_X2Y2 [get_ports {led_8bitOutput[1]}]
+endgroup
+startgroup
+set_property loc IOB_X2Y5 [get_ports {led_8bitOutput[2]}]
+endgroup
+startgroup
+set_property loc IOB_X2Y1 [get_ports {led_8bitOutput[3]}]
+endgroup
+startgroup
+set_property loc IOB_X2Y4 [get_ports {led_8bitOutput[4]}]
+endgroup
+startgroup
+set_property loc IOB_X2Y0 [get_ports {led_8bitOutput[5]}]
+endgroup
+startgroup
+set_property loc IOB_X2Y7 [get_ports {led_8bitOutput[6]}]
+endgroup
+startgroup
+set_property loc IOB_X2Y6 [get_ports {led_8bitOutput[7]}]
+endgroup
+save_design
+exit
+stop_gui

@@ -1,0 +1,36 @@
+Release 13.3 - xst O.76xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to S:/FPGA_Prak/Termin Freitag/LCD_Module/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.53 secs
+ 
+--> Parameter xsthdpdir set to S:/FPGA_Prak/Termin Freitag/LCD_Module/xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.53 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Entprellungs.v" in library work
+Compiling verilog file "Entprellungs_tb.v" in library work
+ERROR:HDLCompilers:26 - "Entprellungs.v" line 57 expecting 'end', found 'endmodule'
+ERROR:HDLCompilers:27 - "Entprellungs_tb.v" line 25 Illegal redeclaration of 'button'
+ERROR:HDLCompilers:27 - "Entprellungs_tb.v" line 26 Illegal redeclaration of 'debounce_en'
+ERROR:HDLCompilers:27 - "Entprellungs_tb.v" line 27 Illegal redeclaration of 'prell_flag'
+ERROR:HDLCompilers:27 - "Entprellungs_tb.v" line 28 Illegal redeclaration of 'prell_counter'
+Module <Entprellungs> compiled
+Analysis of file <"Entprellungs_tb.prj"> failed.
+--> 
+
+Total memory usage is 129192 kilobytes
+
+Number of errors   :    5 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

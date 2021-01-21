@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# PlanAhead v13.3
+# Build 147507 by hdbuild on Tue Oct  4 19:03:28 MDT 2011
+# Start of session at: Fri Jul 07 16:56:10 2017
+# Process ID: 3844
+# Log file: S:/FPGA_Prak/Termin Freitag/UART_Module_windows/planAhead_run_1/planAhead.log
+# Journal file: S:/FPGA_Prak/Termin Freitag/UART_Module_windows/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {S:/FPGA_Prak/Termin Freitag/UART_Module_windows/pa.fromHdl.tcl}
+startgroup
+set_property loc IOB_X2Y120 [get_ports reset_n]
+endgroup
+save_design

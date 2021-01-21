@@ -1,0 +1,8 @@
+Release 13.3 Drc O.76xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Fri Jun 09 13:40:12 2017
+
+drc -z LCD_Module.ncd LCD_Module.pcf
+
+DRC detected 0 errors and 0 warnings.

@@ -1,0 +1,3 @@
+verilog work "Taktteiler_unit.v"
+verilog work "Taktteiler.v"
+verilog work "C:/Programme/Xilinx/ISE_DS/ISE//verilog/src/glbl.v"

@@ -1,0 +1,5 @@
+set -tmpdir "F:/FPGA/Taktteiler/xst/projnav.tmp"
+set -xsthdpdir "F:/FPGA/Taktteiler/xst"
+elaborate
+-ifn Taktteiler_unit.prj
+-ifmt mixed

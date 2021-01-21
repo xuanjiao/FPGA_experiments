@@ -1,0 +1,181 @@
+
+****** PlanAhead v13.3
+  **** Build 147507 by hdbuild on Tue Oct  4 19:03:28 MDT 2011
+    ** Copyright 1986-1999, 2001-2011 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common-78] Attempting to get a license: PlanAhead
+INFO: [Common-82] Got a license: PlanAhead
+INFO: [Common-86] Your PlanAhead license expires in -1680 day(s)
+INFO: [Device-25] Loading parts and site information from C:/Programme/Xilinx/ISE_DS/PlanAhead\parts\arch.xmlParsing RTL primitives file [C:/Programme/Xilinx/ISE_DS/PlanAhead\parts\xilinx\rtl\prims\rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Programme/Xilinx/ISE_DS/PlanAhead\parts\xilinx\rtl\prims\rtl_prims.xml]
+start_gui
+starting gui ...
+source {S:/FPGA_Prak/Termin Freitag/UART_Module/pa.fromHdl.tcl}
+# create_project -name UART_Module -dir "S:/FPGA_Prak/Termin Freitag/UART_Module/planAhead_run_1" -part xc5vlx50tff1136-1
+Parsing template File [C:/Programme/Xilinx/ISE_DS/ISE\data\projnav\templates\verilog.xml].
+Finished parsing template File [C:/Programme/Xilinx/ISE_DS/ISE\data\projnav\templates\verilog.xml].
+Parsing template File [C:/Programme/Xilinx/ISE_DS/ISE\data\projnav\templates\vhdl.xml].
+Finished parsing template File [C:/Programme/Xilinx/ISE_DS/ISE\data\projnav\templates\vhdl.xml].
+Parsing template File [C:/Programme/Xilinx/ISE_DS/ISE\data\projnav\templates\ucf.xml].
+Finished parsing template File [C:/Programme/Xilinx/ISE_DS/ISE\data\projnav\templates\ucf.xml].
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property top UART_zu_LCD $srcset
+# set_property target_constrs_file "UART_zu_LCD.ucf" [current_fileset -constrset]
+Adding file 'S:\FPGA_Prak\Termin Freitag\UART_Module\UART_zu_LCD.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {Entprellungs.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {WriteAsciiLCD.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Transmitter.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Taktteiler.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Receiver.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Mux21.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {InitLCD.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Baudratengenerator.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {UART_Module.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {LCD_Module.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Controller.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {UART_zu_LCD.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# add_files [list {UART_zu_LCD.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc5vlx50tff1136-1
+INFO: [PlanAhead-58] Using Verific elaboration
+Parsing VHDL file "C:/Programme/Xilinx/ISE_DS/PlanAhead\parts\xilinx\rtl\lib\synplify\synattr.vhd" into library synplify
+Analyzing Verilog file "S:\FPGA_Prak\Termin Freitag\UART_Module\Entprellungs.v" into library work
+Analyzing Verilog file "S:\FPGA_Prak\Termin Freitag\UART_Module\WriteAsciiLCD.v" into library work
+Analyzing Verilog file "S:\FPGA_Prak\Termin Freitag\UART_Module\Transmitter.v" into library work
+Analyzing Verilog file "S:\FPGA_Prak\Termin Freitag\UART_Module\Taktteiler.v" into library work
+Analyzing Verilog file "S:\FPGA_Prak\Termin Freitag\UART_Module\Receiver.v" into library work
+Analyzing Verilog file "S:\FPGA_Prak\Termin Freitag\UART_Module\Mux21.v" into library work
+Analyzing Verilog file "S:\FPGA_Prak\Termin Freitag\UART_Module\InitLCD.v" into library work
+Analyzing Verilog file "S:\FPGA_Prak\Termin Freitag\UART_Module\Baudratengenerator.v" into library work
+Analyzing Verilog file "S:\FPGA_Prak\Termin Freitag\UART_Module\UART_Module.v" into library work
+Analyzing Verilog file "S:\FPGA_Prak\Termin Freitag\UART_Module\LCD_Module.v" into library work
+Analyzing Verilog file "S:\FPGA_Prak\Termin Freitag\UART_Module\Controller.v" into library work
+Analyzing Verilog file "S:\FPGA_Prak\Termin Freitag\UART_Module\UART_zu_LCD.v" into library work
+INFO: [PlanAhead-430] Reading macro library C:/Programme/Xilinx/ISE_DS/PlanAhead\./parts/xilinx/virtex5/virtex5lx/hd_int_macros.edn
+Parsing EDIF File [C:/Programme/Xilinx/ISE_DS/PlanAhead\./parts/xilinx/virtex5/virtex5lx/hd_int_macros.edn]
+Finished Parsing EDIF File [C:/Programme/Xilinx/ISE_DS/PlanAhead\./parts/xilinx/virtex5/virtex5lx/hd_int_macros.edn]
+INFO: [Device-21] Reading bus macro file C:/Programme/Xilinx/ISE_DS/PlanAhead\./parts/xilinx/virtex5/pr_bus_macros.xmlLoading clock regions from C:/Programme/Xilinx/ISE_DS/PlanAhead\parts/xilinx/virtex5/virtex5lxt/xc5vlx50t/ClockRegion.xml
+Loading clock buffers from C:/Programme/Xilinx/ISE_DS/PlanAhead\parts/xilinx/virtex5/virtex5lxt/xc5vlx50t/ClockBuffers.xml
+Loading package from C:/Programme/Xilinx/ISE_DS/PlanAhead\parts/xilinx/virtex5/virtex5lxt/xc5vlx50t/ff1136/Package.xml
+Loading io standards from C:/Programme/Xilinx/ISE_DS/PlanAhead\./parts/xilinx/virtex5/IOStandards.xml
+INFO: [Device-19] Loading pkg sso from C:/Programme/Xilinx/ISE_DS/PlanAhead\parts/xilinx/virtex5/virtex5lxt/xc5vlx50t/ff1136/SSORules.xml
+Loading list of drcs for the architecture : C:/Programme/Xilinx/ISE_DS/PlanAhead\./parts/xilinx/virtex5/drc.xml
+Parsing UCF File [S:\FPGA_Prak\Termin Freitag\UART_Module\UART_zu_LCD.ucf]
+Finished Parsing UCF File [S:\FPGA_Prak\Termin Freitag\UART_Module\UART_zu_LCD.ucf]
+INFO: [PlanAhead-566] Unisim Transformation Summary:
+No Unisim elements were transformed.open_rtl_design: Time (s): 21.860w.  Memory (MB): 299.727p 97.273g
+set_property loc "" [get_ports [list  {DB[0]}]]
+set_property loc "" [get_ports [list  {DB[0]}]]
+startgroup
+startgroup
+set_property loc IOB_X2Y71 [get_ports {DB[0]}]
+set_property loc IOB_X2Y71 [get_ports {DB[0]}]
+endgroup
+endgroup
+startgroup
+startgroup
+set_property loc IOB_X2Y76 [get_ports {DB[1]}]
+set_property loc IOB_X2Y76 [get_ports {DB[1]}]
+endgroup
+endgroup
+startgroup
+startgroup
+set_property loc IOB_X2Y74 [get_ports {DB[2]}]
+set_property loc IOB_X2Y74 [get_ports {DB[2]}]
+endgroup
+endgroup
+startgroup
+startgroup
+set_property loc IOB_X2Y79 [get_ports {DB[3]}]
+set_property loc IOB_X2Y79 [get_ports {DB[3]}]
+endgroup
+endgroup
+startgroup
+startgroup
+set_property loc IOB_X2Y77 [get_ports {DB[4]}]
+set_property loc IOB_X2Y77 [get_ports {DB[4]}]
+endgroup
+endgroup
+startgroup
+startgroup
+set_property loc IOB_X2Y78 [get_ports {DB[5]}]
+set_property loc IOB_X2Y78 [get_ports {DB[5]}]
+endgroup
+endgroup
+startgroup
+startgroup
+set_property loc IOB_X2Y73 [get_ports {DB[6]}]
+set_property loc IOB_X2Y73 [get_ports {DB[6]}]
+endgroup
+endgroup
+startgroup
+startgroup
+set_property loc IOB_X2Y72 [get_ports {DB[7]}]
+set_property loc IOB_X2Y72 [get_ports {DB[7]}]
+endgroup
+endgroup
+startgroup
+startgroup
+set_property loc IOB_X2Y75 [get_ports E]
+set_property loc IOB_X2Y75 [get_ports E]
+endgroup
+endgroup
+startgroup
+startgroup
+set_property loc IOB_X2Y56 [get_ports RS]
+set_property loc IOB_X2Y56 [get_ports RS]
+endgroup
+endgroup
+startgroup
+startgroup
+set_property loc IOB_X2Y63 [get_ports RW]
+set_property loc IOB_X2Y63 [get_ports RW]
+endgroup
+endgroup
+startgroup
+startgroup
+set_property loc IOB_X1Y68 [get_ports RXD]
+set_property loc IOB_X1Y68 [get_ports RXD]
+endgroup
+endgroup
+startgroup
+startgroup
+set_property loc IOB_X1Y67 [get_ports clk]
+set_property loc IOB_X1Y67 [get_ports clk]
+endgroup
+endgroup
+startgroup
+startgroup
+set_property loc IOB_X2Y120 [get_ports reset_n]
+set_property loc IOB_X2Y120 [get_ports reset_n]
+endgroup
+endgroup
+save_design
+exit
+stop_gui
+INFO: [PlanAhead-261] Exiting PlanAhead...
+INFO: [Common-83] Releasing license: PlanAhead

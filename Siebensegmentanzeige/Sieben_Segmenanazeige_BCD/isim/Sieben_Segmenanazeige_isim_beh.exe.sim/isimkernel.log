@@ -1,0 +1,28 @@
+Command line:
+   Sieben_Segmenanazeige_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  1171
+
+Fri May 26 08:51:47 2017
+
+
+ Elaboration Time: 0.109375 sec
+
+ Current Memory Usage: 471.146 Meg
+
+ Total Signals          : 17
+ Total Nets             : 34
+ Total Signal Drivers   : 7
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 9
+ Total Traceable Variables  : 54
+ Total Scalar Nets and Variables : 315
+
+ Total Simulation Time: 0.140625 sec
+
+ Current Memory Usage: 471.146 Meg
+
+Fri May 26 08:51:51 2017
+

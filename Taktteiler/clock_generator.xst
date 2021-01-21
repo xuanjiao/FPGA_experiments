@@ -1,0 +1,5 @@
+set -tmpdir "F:/FPGA/Taktteiler/xst/projnav.tmp"
+set -xsthdpdir "F:/FPGA/Taktteiler/xst"
+elaborate
+-ifn clock_generator.prj
+-ifmt mixed

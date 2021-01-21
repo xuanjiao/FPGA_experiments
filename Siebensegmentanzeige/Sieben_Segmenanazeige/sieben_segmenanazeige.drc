@@ -1,0 +1,8 @@
+Release 13.3 Drc O.76xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Fri May 26 09:43:06 2017
+
+drc -z Sieben_Segmenanazeige.ncd Sieben_Segmenanazeige.pcf
+
+DRC detected 0 errors and 0 warnings.

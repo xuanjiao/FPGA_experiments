@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# PlanAhead v13.3
+# Build 147507 by hdbuild on Tue Oct  4 19:03:28 MDT 2011
+# Start of session at: Fri Jul 07 18:31:45 2017
+# Process ID: 3148
+# Log file: S:/FPGA_Prak/Termin Freitag/LCD_Module/planAhead_run_1/planAhead.log
+# Journal file: S:/FPGA_Prak/Termin Freitag/LCD_Module/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {S:/FPGA_Prak/Termin Freitag/LCD_Module/pa.fromHdl.tcl}
+exit
+stop_gui

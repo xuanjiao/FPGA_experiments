@@ -1,0 +1,804 @@
+Release 13.3 - xst O.76xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 2.56 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 2.56 secs
+ 
+--> Reading design: ADXL345_Hauptmodul.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ADXL345_Hauptmodul.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ADXL345_Hauptmodul"
+Output Format                      : NGC
+Target Device                      : xc5vlx50t-1-ff1136
+
+---- Source Options
+Top Module Name                    : ADXL345_Hauptmodul
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "SPI_Module.v" in library work
+Compiling verilog file "SPI_16BitController.v" in library work
+Module <SPI_Module> compiled
+Compiling verilog file "SPI_16BitInterface.v" in library work
+Module <SPI_16BitController> compiled
+Compiling verilog file "LED_Controller.v" in library work
+Module <SPI_16BitInterface> compiled
+Compiling verilog file "ADXL345Controller.v" in library work
+Module <LED_Controller> compiled
+Compiling verilog file "ADXL345_Hauptmodul.v" in library work
+Module <ADXL345Controller> compiled
+Module <ADXL345_Hauptmodul> compiled
+No errors in compilation
+Analysis of file <"ADXL345_Hauptmodul.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <ADXL345_Hauptmodul> in library <work>.
+
+Analyzing hierarchy for module <ADXL345Controller> in library <work> with parameters.
+	chip_init = "0000"
+	read_x_high_byte = "0011"
+	read_x_low_byte = "0010"
+	read_y_high_byte = "0101"
+	read_y_low_byte = "0100"
+	read_z_high_byte = "0111"
+	read_z_low_byte = "0110"
+	start_measuring_in_chip = "0001"
+	store_measuring_result = "1000"
+
+Analyzing hierarchy for module <SPI_16BitInterface> in library <work>.
+
+Analyzing hierarchy for module <LED_Controller> in library <work> with parameters.
+	select_X = "001"
+	select_Y = "010"
+	select_Z = "100"
+
+Analyzing hierarchy for module <SPI_16BitController> in library <work> with parameters.
+	finish = "101"
+	idle = "000"
+	send_byte_0 = "011"
+	send_byte_1 = "010"
+	set_up = "001"
+
+Analyzing hierarchy for module <SPI_Module> in library <work> with parameters.
+	finish = "100"
+	idle = "000"
+	sclk_run = "011"
+	spi_prescaler = "1010"
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <ADXL345_Hauptmodul>.
+Module <ADXL345_Hauptmodul> is correct for synthesis.
+ 
+Analyzing module <ADXL345Controller> in library <work>.
+	chip_init = 4'b0000
+	read_x_high_byte = 4'b0011
+	read_x_low_byte = 4'b0010
+	read_y_high_byte = 4'b0101
+	read_y_low_byte = 4'b0100
+	read_z_high_byte = 4'b0111
+	read_z_low_byte = 4'b0110
+	start_measuring_in_chip = 4'b0001
+	store_measuring_result = 4'b1000
+Module <ADXL345Controller> is correct for synthesis.
+ 
+Analyzing module <SPI_16BitInterface> in library <work>.
+Module <SPI_16BitInterface> is correct for synthesis.
+ 
+Analyzing module <SPI_16BitController> in library <work>.
+	finish = 3'b101
+	idle = 3'b000
+	send_byte_0 = 3'b011
+	send_byte_1 = 3'b010
+	set_up = 3'b001
+Module <SPI_16BitController> is correct for synthesis.
+ 
+Analyzing module <SPI_Module> in library <work>.
+	finish = 3'b100
+	idle = 3'b000
+	sclk_run = 3'b011
+	spi_prescaler = 4'b1010
+Module <SPI_Module> is correct for synthesis.
+ 
+Analyzing module <LED_Controller> in library <work>.
+	select_X = 3'b001
+	select_Y = 3'b010
+	select_Z = 3'b100
+Module <LED_Controller> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <ADXL345Controller>.
+    Related source file is "ADXL345Controller.v".
+WARNING:Xst:647 - Input <data_out_16bit<15:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 9                                              |
+    | Transitions        | 24                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 15                                             |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | reset_n                   (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 0000                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <start>.
+    Found 16-bit register for signal <X>.
+    Found 16-bit register for signal <Y>.
+    Found 16-bit register for signal <Z>.
+    Found 16-bit register for signal <data_in_16bit>.
+    Found 1-bit register for signal <busy_last>.
+    Found 4-bit register for signal <start_cnt>.
+    Found 4-bit adder for signal <start_cnt$addsub0000>.
+    Found 4-bit comparator less for signal <start_cnt$cmp_lt0000> created at line 83.
+    Found 17-bit comparator greatequal for signal <state$cmp_ge0000> created at line 71.
+    Found 17-bit up counter for signal <wait_cnt>.
+    Found 16-bit register for signal <X_buffer>.
+    Found 16-bit register for signal <Y_buffer>.
+    Found 16-bit register for signal <Z_buffer>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 Counter(s).
+	inferred 118 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+Unit <ADXL345Controller> synthesized.
+
+
+Synthesizing Unit <LED_Controller>.
+    Related source file is "LED_Controller.v".
+    Found 8-bit register for signal <led_8bitOutput>.
+    Found 16-bit comparator lessequal for signal <led_8bitOutput$cmp_le0000> created at line 75.
+    Found 16-bit comparator lessequal for signal <led_8bitOutput$cmp_le0001> created at line 77.
+    Found 16-bit comparator lessequal for signal <led_8bitOutput$cmp_le0002> created at line 79.
+    Found 16-bit comparator lessequal for signal <led_8bitOutput$cmp_le0003> created at line 109.
+    Found 16-bit comparator lessequal for signal <led_8bitOutput$cmp_le0004> created at line 111.
+    Found 16-bit comparator lessequal for signal <led_8bitOutput$cmp_le0005> created at line 113.
+    Found 16-bit comparator lessequal for signal <led_8bitOutput$cmp_le0006> created at line 142.
+    Found 16-bit comparator lessequal for signal <led_8bitOutput$cmp_le0007> created at line 144.
+    Found 16-bit comparator lessequal for signal <led_8bitOutput$cmp_le0008> created at line 146.
+    Found 16-bit adder for signal <X_value$addsub0000> created at line 45.
+    Found 16-bit adder for signal <Y_value$addsub0000> created at line 51.
+    Found 16-bit adder for signal <Z_value$addsub0000> created at line 57.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred   9 Comparator(s).
+Unit <LED_Controller> synthesized.
+
+
+Synthesizing Unit <SPI_16BitController>.
+    Related source file is "SPI_16BitController.v".
+    Found finite state machine <FSM_1> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 11                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 5                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | reset_n                   (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 000                                            |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <CS>.
+    Found 8-bit register for signal <spi_data_in>.
+    Found 1-bit register for signal <busy>.
+    Found 16-bit register for signal <data_out_16bit>.
+    Found 1-bit register for signal <spi_start>.
+    Found 16-bit register for signal <buffer_16bit>.
+    Found 1-bit register for signal <spi_busy_last>.
+    Found 4-bit register for signal <spi_start_cnt>.
+    Found 4-bit comparator less for signal <spi_start_cnt$cmp_lt0000> created at line 84.
+    Found 4-bit adder for signal <spi_start_cnt$share0000> created at line 59.
+    Found 5-bit comparator greater for signal <state$cmp_gt0000> created at line 118.
+    Found 5-bit up counter for signal <wait_cnt>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 Counter(s).
+	inferred  48 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+Unit <SPI_16BitController> synthesized.
+
+
+Synthesizing Unit <SPI_Module>.
+    Related source file is "SPI_Module.v".
+    Found finite state machine <FSM_2> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 5                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | reset_n                   (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 000                                            |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit register for signal <spi_data_out>.
+    Found 1-bit register for signal <spi_busy>.
+    Found 1-bit register for signal <MOSI>.
+    Found 1-bit register for signal <SCLK>.
+    Found 1-bit register for signal <bus_reg>.
+    Found 8-bit register for signal <clock_cnt>.
+    Found 8-bit adder for signal <clock_cnt$addsub0000> created at line 79.
+    Found 6-bit register for signal <edge_cnt>.
+    Found 6-bit adder for signal <edge_cnt$addsub0000> created at line 77.
+    Found 4-bit up counter for signal <falling_edge_cnt>.
+    Found 8-bit comparator greatequal for signal <SCLK$cmp_ge0000> created at line 74.
+    Found 8-bit register for signal <shift_reg>.
+    Found 6-bit comparator less for signal <state$cmp_lt0000> created at line 73.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 Counter(s).
+	inferred  34 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+Unit <SPI_Module> synthesized.
+
+
+Synthesizing Unit <SPI_16BitInterface>.
+    Related source file is "SPI_16BitInterface.v".
+Unit <SPI_16BitInterface> synthesized.
+
+
+Synthesizing Unit <ADXL345_Hauptmodul>.
+    Related source file is "ADXL345_Hauptmodul.v".
+Unit <ADXL345_Hauptmodul> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 7
+ 16-bit adder                                          : 3
+ 4-bit adder                                           : 2
+ 6-bit adder                                           : 1
+ 8-bit adder                                           : 1
+# Counters                                             : 3
+ 17-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+ 5-bit up counter                                      : 1
+# Registers                                            : 87
+ 1-bit register                                        : 74
+ 16-bit register                                       : 5
+ 4-bit register                                        : 2
+ 6-bit register                                        : 1
+ 8-bit register                                        : 5
+# Comparators                                          : 15
+ 16-bit comparator lessequal                           : 9
+ 17-bit comparator greatequal                          : 1
+ 4-bit comparator less                                 : 2
+ 5-bit comparator greater                              : 1
+ 6-bit comparator less                                 : 1
+ 8-bit comparator greatequal                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_2> for best encoding.
+Optimizing FSM <in/spi/state/FSM> on signal <state[1:2]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 00
+ 011   | 01
+ 100   | 10
+-------------------
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <in/con/state/FSM> on signal <state[1:3]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000
+ 001   | 001
+ 010   | 011
+ 011   | 010
+ 101   | 110
+-------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <ADXLCon/state/FSM> on signal <state[1:9]> with one-hot encoding.
+--------------------
+ State | Encoding
+--------------------
+ 0000  | 000000001
+ 0001  | 000000010
+ 0010  | 000000100
+ 0011  | 000001000
+ 0100  | 000010000
+ 0101  | 000100000
+ 0110  | 001000000
+ 0111  | 010000000
+ 1000  | 100000000
+--------------------
+WARNING:Xst:1710 - FF/Latch <spi_data_in_6> (without init value) has a constant value of 0 in block <con>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <buffer_16bit_14> (without init value) has a constant value of 0 in block <con>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <buffer_16bit_7> (without init value) has a constant value of 0 in block <con>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <buffer_16bit_6> (without init value) has a constant value of 0 in block <con>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <buffer_16bit_5> (without init value) has a constant value of 0 in block <con>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <buffer_16bit_4> (without init value) has a constant value of 0 in block <con>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <buffer_16bit_2> (without init value) has a constant value of 0 in block <con>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <buffer_16bit_1> (without init value) has a constant value of 0 in block <con>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <buffer_16bit_0> (without init value) has a constant value of 0 in block <con>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_in_16bit_14> (without init value) has a constant value of 0 in block <ADXLCon>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_in_16bit_7> (without init value) has a constant value of 0 in block <ADXLCon>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_in_16bit_6> (without init value) has a constant value of 0 in block <ADXLCon>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_in_16bit_5> (without init value) has a constant value of 0 in block <ADXLCon>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_in_16bit_4> (without init value) has a constant value of 0 in block <ADXLCon>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_in_16bit_2> (without init value) has a constant value of 0 in block <ADXLCon>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_in_16bit_1> (without init value) has a constant value of 0 in block <ADXLCon>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_in_16bit_0> (without init value) has a constant value of 0 in block <ADXLCon>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 3
+# Adders/Subtractors                                   : 7
+ 16-bit adder                                          : 3
+ 4-bit adder                                           : 2
+ 6-bit adder                                           : 1
+ 8-bit adder                                           : 1
+# Counters                                             : 3
+ 17-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+ 5-bit up counter                                      : 1
+# Registers                                            : 208
+ Flip-Flops                                            : 208
+# Comparators                                          : 15
+ 16-bit comparator lessequal                           : 9
+ 17-bit comparator greatequal                          : 1
+ 4-bit comparator less                                 : 2
+ 5-bit comparator greater                              : 1
+ 6-bit comparator less                                 : 1
+ 8-bit comparator greatequal                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <data_in_16bit_0> (without init value) has a constant value of 0 in block <ADXL345Controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_in_16bit_1> (without init value) has a constant value of 0 in block <ADXL345Controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_in_16bit_2> (without init value) has a constant value of 0 in block <ADXL345Controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_in_16bit_4> (without init value) has a constant value of 0 in block <ADXL345Controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_in_16bit_5> (without init value) has a constant value of 0 in block <ADXL345Controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_in_16bit_6> (without init value) has a constant value of 0 in block <ADXL345Controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_in_16bit_7> (without init value) has a constant value of 0 in block <ADXL345Controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_in_16bit_14> (without init value) has a constant value of 0 in block <ADXL345Controller>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <ADXL345_Hauptmodul> ...
+
+Optimizing unit <ADXL345Controller> ...
+
+Optimizing unit <LED_Controller> ...
+
+Optimizing unit <SPI_16BitController> ...
+
+Optimizing unit <SPI_Module> ...
+WARNING:Xst:1710 - FF/Latch <edge_cnt_5> (without init value) has a constant value of 0 in block <SPI_Module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <edge_cnt_5> (without init value) has a constant value of 0 in block <SPI_Module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <falling_edge_cnt_3> (without init value) has a constant value of 0 in block <SPI_Module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <clock_cnt_7> (without init value) has a constant value of 0 in block <SPI_Module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <edge_cnt_5> (without init value) has a constant value of 0 in block <SPI_Module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <falling_edge_cnt_3> (without init value) has a constant value of 0 in block <SPI_Module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <clock_cnt_7> (without init value) has a constant value of 0 in block <SPI_Module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <edge_cnt_5> (without init value) has a constant value of 0 in block <SPI_Module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <in/con/buffer_16bit_14> (without init value) has a constant value of 0 in block <ADXL345_Hauptmodul>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <in/con/buffer_16bit_7> (without init value) has a constant value of 0 in block <ADXL345_Hauptmodul>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <in/con/buffer_16bit_6> (without init value) has a constant value of 0 in block <ADXL345_Hauptmodul>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <in/con/buffer_16bit_5> (without init value) has a constant value of 0 in block <ADXL345_Hauptmodul>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <in/con/buffer_16bit_4> (without init value) has a constant value of 0 in block <ADXL345_Hauptmodul>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <in/con/buffer_16bit_2> (without init value) has a constant value of 0 in block <ADXL345_Hauptmodul>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <in/con/buffer_16bit_1> (without init value) has a constant value of 0 in block <ADXL345_Hauptmodul>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <in/con/buffer_16bit_0> (without init value) has a constant value of 0 in block <ADXL345_Hauptmodul>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <in/con/spi_data_in_6> (without init value) has a constant value of 0 in block <ADXL345_Hauptmodul>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <in/con/data_out_16bit_8> of sequential type is unconnected in block <ADXL345_Hauptmodul>.
+WARNING:Xst:2677 - Node <in/con/data_out_16bit_9> of sequential type is unconnected in block <ADXL345_Hauptmodul>.
+WARNING:Xst:2677 - Node <in/con/data_out_16bit_10> of sequential type is unconnected in block <ADXL345_Hauptmodul>.
+WARNING:Xst:2677 - Node <in/con/data_out_16bit_12> of sequential type is unconnected in block <ADXL345_Hauptmodul>.
+WARNING:Xst:2677 - Node <in/con/data_out_16bit_13> of sequential type is unconnected in block <ADXL345_Hauptmodul>.
+WARNING:Xst:2677 - Node <in/con/data_out_16bit_11> of sequential type is unconnected in block <ADXL345_Hauptmodul>.
+WARNING:Xst:2677 - Node <in/con/data_out_16bit_14> of sequential type is unconnected in block <ADXL345_Hauptmodul>.
+WARNING:Xst:2677 - Node <in/con/data_out_16bit_15> of sequential type is unconnected in block <ADXL345_Hauptmodul>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ADXL345_Hauptmodul, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 220
+ Flip-Flops                                            : 220
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : ADXL345_Hauptmodul.ngr
+Top Level Output File Name         : ADXL345_Hauptmodul
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 17
+
+Cell Usage :
+# BELS                             : 396
+#      GND                         : 1
+#      INV                         : 48
+#      LUT1                        : 3
+#      LUT2                        : 20
+#      LUT3                        : 32
+#      LUT4                        : 43
+#      LUT5                        : 35
+#      LUT6                        : 82
+#      MUXCY                       : 61
+#      MUXF7                       : 5
+#      VCC                         : 1
+#      XORCY                       : 65
+# FlipFlops/Latches                : 220
+#      FDC                         : 98
+#      FDC_1                       : 1
+#      FDCE                        : 118
+#      FDP                         : 3
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 16
+#      IBUF                        : 5
+#      OBUF                        : 11
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 5vlx50tff1136-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             220  out of  28800     0%  
+ Number of Slice LUTs:                  263  out of  28800     0%  
+    Number used as Logic:               263  out of  28800     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    356
+   Number with an unused Flip Flop:     136  out of    356    38%  
+   Number with an unused LUT:            93  out of    356    26%  
+   Number of fully used LUT-FF pairs:   127  out of    356    35%  
+   Number of unique control sets:        12
+
+IO Utilization: 
+ Number of IOs:                          17
+ Number of bonded IOBs:                  17  out of    480     3%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+--------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)          | Load  |
+-----------------------------------+--------------------------------+-------+
+clk                                | BUFGP                          | 207   |
+in/spi/SCLK                        | NONE(in/spi/falling_edge_cnt_2)| 13    |
+-----------------------------------+--------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+---------------------------------------------+------------------------+-------+
+Control Signal                               | Buffer(FF name)        | Load  |
+---------------------------------------------+------------------------+-------+
+ADXLCon/reset_n_inv(led/reset_n_inv1_INV_0:O)| NONE(ADXLCon/X_0)      | 220   |
+---------------------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 5.447ns (Maximum Frequency: 183.587MHz)
+   Minimum input arrival time before clock: 5.219ns
+   Maximum output required time after clock: 3.325ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 5.447ns (frequency: 183.587MHz)
+  Total number of paths / destination ports: 9749 / 325
+-------------------------------------------------------------------------
+Delay:               5.447ns (Levels of Logic = 13)
+  Source:            ADXLCon/Y_0 (FF)
+  Destination:       led/led_8bitOutput_7 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: ADXLCon/Y_0 to led/led_8bitOutput_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.471   0.485  ADXLCon/Y_0 (ADXLCon/Y_0)
+     LUT1:I0->O            1   0.094   0.000  led/Madd_Y_value_addsub0000_cy<0>_rt (led/Madd_Y_value_addsub0000_cy<0>_rt)
+     MUXCY:S->O            1   0.372   0.000  led/Madd_Y_value_addsub0000_cy<0> (led/Madd_Y_value_addsub0000_cy<0>)
+     MUXCY:CI->O           1   0.026   0.000  led/Madd_Y_value_addsub0000_cy<1> (led/Madd_Y_value_addsub0000_cy<1>)
+     MUXCY:CI->O           1   0.026   0.000  led/Madd_Y_value_addsub0000_cy<2> (led/Madd_Y_value_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.026   0.000  led/Madd_Y_value_addsub0000_cy<3> (led/Madd_Y_value_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.026   0.000  led/Madd_Y_value_addsub0000_cy<4> (led/Madd_Y_value_addsub0000_cy<4>)
+     MUXCY:CI->O           1   0.026   0.000  led/Madd_Y_value_addsub0000_cy<5> (led/Madd_Y_value_addsub0000_cy<5>)
+     MUXCY:CI->O           1   0.026   0.000  led/Madd_Y_value_addsub0000_cy<6> (led/Madd_Y_value_addsub0000_cy<6>)
+     XORCY:CI->O           5   0.357   1.091  led/Madd_Y_value_addsub0000_xor<7> (led/Y_value_addsub0000<7>)
+     LUT6:I0->O            2   0.094   0.485  led/led_8bitOutput_cmp_eq00031_SW2 (N91)
+     LUT6:I5->O            3   0.094   1.080  led/led_8bitOutput_mux0000<0>21 (led/N41)
+     LUT6:I0->O            1   0.094   0.480  led/led_8bitOutput_mux0000<0>_SW0 (N73)
+     LUT4:I3->O            1   0.094   0.000  led/led_8bitOutput_mux0000<0> (led/led_8bitOutput_mux0000<0>)
+     FDC:D                    -0.018          led/led_8bitOutput_7
+    ----------------------------------------
+    Total                      5.447ns (1.826ns logic, 3.621ns route)
+                                       (33.5% logic, 66.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'in/spi/SCLK'
+  Clock period: 3.174ns (frequency: 315.060MHz)
+  Total number of paths / destination ports: 42 / 12
+-------------------------------------------------------------------------
+Delay:               1.587ns (Levels of Logic = 1)
+  Source:            in/spi/falling_edge_cnt_2 (FF)
+  Destination:       in/spi/shift_reg_7 (FF)
+  Source Clock:      in/spi/SCLK falling
+  Destination Clock: in/spi/SCLK rising
+
+  Data Path: in/spi/falling_edge_cnt_2 to in/spi/shift_reg_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             10   0.471   1.022  in/spi/falling_edge_cnt_2 (in/spi/falling_edge_cnt_2)
+     LUT5:I0->O            1   0.094   0.000  in/spi/shift_reg_mux0000<7>1 (in/spi/shift_reg_mux0000<7>)
+     FDC:D                    -0.018          in/spi/shift_reg_7
+    ----------------------------------------
+    Total                      1.587ns (0.565ns logic, 1.022ns route)
+                                       (35.6% logic, 64.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 66 / 8
+-------------------------------------------------------------------------
+Offset:              5.219ns (Levels of Logic = 6)
+  Source:            SW<1> (PAD)
+  Destination:       led/led_8bitOutput_7 (FF)
+  Destination Clock: clk rising
+
+  Data Path: SW<1> to led/led_8bitOutput_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             7   0.818   0.609  SW_1_IBUF (SW_1_IBUF)
+     LUT2:I0->O            1   0.094   0.973  led/led_8bitOutput_cmp_le00032_SW0_SW0 (N83)
+     LUT6:I1->O            1   0.094   0.789  led/led_8bitOutput_cmp_le00032_SW1 (N66)
+     LUT6:I2->O            3   0.094   1.080  led/led_8bitOutput_mux0000<0>21 (led/N41)
+     LUT6:I0->O            1   0.094   0.480  led/led_8bitOutput_mux0000<0>_SW0 (N73)
+     LUT4:I3->O            1   0.094   0.000  led/led_8bitOutput_mux0000<0> (led/led_8bitOutput_mux0000<0>)
+     FDC:D                    -0.018          led/led_8bitOutput_7
+    ----------------------------------------
+    Total                      5.219ns (1.288ns logic, 3.931ns route)
+                                       (24.7% logic, 75.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'in/spi/SCLK'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.154ns (Levels of Logic = 1)
+  Source:            MISO (PAD)
+  Destination:       in/spi/shift_reg_0 (FF)
+  Destination Clock: in/spi/SCLK rising
+
+  Data Path: MISO to in/spi/shift_reg_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.818   0.336  MISO_IBUF (MISO_IBUF)
+     FDC:D                    -0.018          in/spi/shift_reg_0
+    ----------------------------------------
+    Total                      1.154ns (0.818ns logic, 0.336ns route)
+                                       (70.9% logic, 29.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 10 / 10
+-------------------------------------------------------------------------
+Offset:              3.325ns (Levels of Logic = 1)
+  Source:            in/spi/SCLK (FF)
+  Destination:       SCLK (PAD)
+  Source Clock:      clk rising
+
+  Data Path: in/spi/SCLK to SCLK
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q             13   0.471   0.402  in/spi/SCLK (in/spi/SCLK)
+     OBUF:I->O                 2.452          SCLK_OBUF (SCLK)
+    ----------------------------------------
+    Total                      3.325ns (2.923ns logic, 0.402ns route)
+                                       (87.9% logic, 12.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'in/spi/SCLK'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              3.255ns (Levels of Logic = 1)
+  Source:            in/spi/MOSI (FF)
+  Destination:       MOSI (PAD)
+  Source Clock:      in/spi/SCLK falling
+
+  Data Path: in/spi/MOSI to MOSI
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC_1:C->Q            1   0.467   0.336  in/spi/MOSI (in/spi/MOSI)
+     OBUF:I->O                 2.452          MOSI_OBUF (MOSI)
+    ----------------------------------------
+    Total                      3.255ns (2.919ns logic, 0.336ns route)
+                                       (89.7% logic, 10.3% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 24.00 secs
+Total CPU time to Xst completion: 23.80 secs
+ 
+--> 
+
+Total memory usage is 167644 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   51 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

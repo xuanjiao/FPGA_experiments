@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "F:/FPGA/Sieben_Segmenanazeige/Sieben_Segmenanazeige_tb.xst" -ofn "F:/FPGA/Sieben_Segmenanazeige/Sieben_Segmenanazeige_tb.syr" 

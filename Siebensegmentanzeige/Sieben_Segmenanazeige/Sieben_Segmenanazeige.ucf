@@ -1,0 +1,28 @@
+
+
+NET "out0[0]" LOC = AM12;
+NET "out0[1]" LOC = AM13;
+NET "out0[2]" LOC = AE8;
+NET "out0[3]" LOC = AD10;
+NET "out0[4]" LOC = AJ11;
+NET "out0[5]" LOC = AD11;
+NET "out0[6]" LOC = AD9;
+NET "out1[1]" LOC = AB10;
+NET "out1[2]" LOC = AB8;
+NET "out1[3]" LOC = AF8;
+NET "out1[4]" LOC = AA9;
+NET "out1[5]" LOC = AE9;
+NET "out1[6]" LOC = AC8;
+
+
+NET "in[0]" LOC = J19;
+NET "in[1]" LOC = L18;
+NET "in[2]" LOC = K18;
+NET "in[3]" LOC = H18;
+NET "out1[0]" LOC = AC9;
+
+# PlanAhead Generated physical constraints 
+
+NET "clk" LOC = AG18;
+NET "reset_n" LOC = E7;
+NET "sw" LOC = G15;

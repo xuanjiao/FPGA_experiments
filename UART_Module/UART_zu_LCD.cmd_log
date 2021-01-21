@@ -1,0 +1,11 @@
+xst -intstyle ise -ifn "S:/FPGA_Prak/Termin Freitag/UART_Module/UART_zu_LCD.xst" -ofn "S:/FPGA_Prak/Termin Freitag/UART_Module/UART_zu_LCD.syr" 
+xst -intstyle ise -ifn "S:/FPGA_Prak/Termin Freitag/UART_Module/UART_zu_LCD.xst" -ofn "S:/FPGA_Prak/Termin Freitag/UART_Module/UART_zu_LCD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx50t-ff1136-1 "UART_zu_LCD.ngc" UART_zu_LCD.ngd  
+map -intstyle ise -p xc5vlx50t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o UART_zu_LCD_map.ncd UART_zu_LCD.ngd UART_zu_LCD.pcf 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim UART_zu_LCD.ngc UART_zu_LCD_synthesis.v 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim UART_zu_LCD.ngc UART_zu_LCD_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UART_zu_LCD.ucf -p xc5vlx50t-ff1136-1 "UART_zu_LCD.ngc" UART_zu_LCD.ngd  
+map -intstyle ise -p xc5vlx50t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o UART_zu_LCD_map.ncd UART_zu_LCD.ngd UART_zu_LCD.pcf 
+par -w -intstyle ise -ol high -mt off UART_zu_LCD_map.ncd UART_zu_LCD.ncd UART_zu_LCD.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml UART_zu_LCD.twx UART_zu_LCD.ncd -o UART_zu_LCD.twr UART_zu_LCD.pcf -ucf UART_zu_LCD.ucf 
+bitgen -intstyle ise -f UART_zu_LCD.ut UART_zu_LCD.ncd 

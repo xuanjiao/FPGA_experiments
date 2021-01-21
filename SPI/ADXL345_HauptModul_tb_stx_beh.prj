@@ -1,0 +1,8 @@
+verilog isim_temp "SPI_Module.v"
+verilog isim_temp "SPI_16BitController.v"
+verilog isim_temp "SPI_16BitInterface.v"
+verilog isim_temp "LED_Controller.v"
+verilog isim_temp "ADXL345Controller.v"
+verilog isim_temp "ADXL345_Hauptmodul.v"
+verilog isim_temp "ADXL345_HauptModul_tb.v"
+verilog isim_temp "C:/Programme/Xilinx/ISE_DS/ISE//verilog/src/glbl.v"

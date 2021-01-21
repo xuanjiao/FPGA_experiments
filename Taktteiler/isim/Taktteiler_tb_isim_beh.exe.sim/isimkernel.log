@@ -1,0 +1,28 @@
+Command line:
+   Taktteiler_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  1203
+
+Fri May 19 10:23:39 2017
+
+
+ Elaboration Time: 0.09375 sec
+
+ Current Memory Usage: 471.142 Meg
+
+ Total Signals          : 16
+ Total Nets             : 25
+ Total Signal Drivers   : 9
+ Total Blocks           : 4
+ Total Primitive Blocks : 3
+ Total Processes        : 14
+ Total Traceable Variables  : 22
+ Total Scalar Nets and Variables : 127
+
+ Total Simulation Time: 0.125 sec
+
+ Current Memory Usage: 471.142 Meg
+
+Fri May 19 10:23:43 2017
+

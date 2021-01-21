@@ -1,0 +1,931 @@
+Release 13.3 - xst O.76xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 3.34 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 3.34 secs
+ 
+--> Reading design: UART_zu_LCD.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "UART_zu_LCD.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "UART_zu_LCD"
+Output Format                      : NGC
+Target Device                      : xc5vlx50t-1-ff1136
+
+---- Source Options
+Top Module Name                    : UART_zu_LCD
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Off
+Reduce Control Sets                : Off
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Entprellungs.v" in library work
+Compiling verilog file "WriteAsciiLCD.v" in library work
+Module <Entprellungs> compiled
+Compiling verilog file "Transmitter.v" in library work
+Module <WriteAsciiLCD> compiled
+Compiling verilog file "Taktteiler.v" in library work
+Module <Transmitter> compiled
+Compiling verilog file "Receiver.v" in library work
+Module <Taktteiler> compiled
+Compiling verilog file "Mux21.v" in library work
+Module <Receiver> compiled
+Compiling verilog file "InitLCD.v" in library work
+Module <Mux21> compiled
+Compiling verilog file "Baudratengenerator.v" in library work
+Module <InitLCD> compiled
+Compiling verilog file "UART_Module.v" in library work
+Module <Baudratengenerator> compiled
+Compiling verilog file "LCD_Module.v" in library work
+Module <UART_Module> compiled
+Compiling verilog file "Controller.v" in library work
+Module <LCD_Module> compiled
+Compiling verilog file "UART_zu_LCD.v" in library work
+Module <Controller> compiled
+Module <UART_zu_LCD> compiled
+No errors in compilation
+Analysis of file <"UART_zu_LCD.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <UART_zu_LCD> in library <work>.
+
+Analyzing hierarchy for module <UART_Module> in library <work>.
+
+Analyzing hierarchy for module <Controller> in library <work>.
+
+Analyzing hierarchy for module <LCD_Module> in library <work>.
+
+Analyzing hierarchy for module <Baudratengenerator> in library <work>.
+
+Analyzing hierarchy for module <Receiver> in library <work> with parameters.
+	get_del_flag = "1100"
+	idle = "0000"
+	smp_bit_0 = "0010"
+	smp_bit_1 = "0011"
+	smp_bit_2 = "0100"
+	smp_bit_3 = "0101"
+	smp_bit_4 = "0110"
+	smp_bit_5 = "0111"
+	smp_bit_6 = "1000"
+	smp_bit_7 = "1001"
+	smp_bit_start = "0001"
+	smp_bit_stop = "1010"
+	wait_del_flag = "1011"
+
+Analyzing hierarchy for module <Transmitter> in library <work> with parameters.
+	bit_0 = "0010"
+	bit_1 = "0011"
+	bit_2 = "0100"
+	bit_3 = "0101"
+	bit_4 = "0110"
+	bit_5 = "0111"
+	bit_6 = "1000"
+	bit_7 = "1001"
+	bit_start = "0001"
+	bit_stop = "1010"
+	get_del_flag = "1100"
+	idle = "0000"
+	wait_for_del_flag = "1011"
+
+Analyzing hierarchy for module <Taktteiler> in library <work>.
+
+Analyzing hierarchy for module <WriteAsciiLCD> in library <work> with parameters.
+	buffer = "0000"
+	write_1 = "0001"
+	write_2 = "0010"
+	write_3 = "0011"
+	write_4 = "0100"
+	write_wait_for_next_start = "0101"
+
+Analyzing hierarchy for module <InitLCD> in library <work> with parameters.
+	display_clear = "0110"
+	display_clear_wait_send = "0111"
+	display_on = "0100"
+	display_on_wait_send = "0101"
+	entry_model_set = "1000"
+	entry_model_set_wait_send = "1001"
+	function_set = "0010"
+	function_set_wait_send = "0011"
+	init_finish = "1010"
+	power_on_wait_send = "0001"
+
+Analyzing hierarchy for module <Mux21> in library <work>.
+
+Analyzing hierarchy for module <Entprellungs> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <UART_zu_LCD>.
+Module <UART_zu_LCD> is correct for synthesis.
+ 
+Analyzing module <UART_Module> in library <work>.
+Module <UART_Module> is correct for synthesis.
+ 
+Analyzing module <Baudratengenerator> in library <work>.
+Module <Baudratengenerator> is correct for synthesis.
+ 
+Analyzing module <Receiver> in library <work>.
+	get_del_flag = 4'b1100
+	idle = 4'b0000
+	smp_bit_0 = 4'b0010
+	smp_bit_1 = 4'b0011
+	smp_bit_2 = 4'b0100
+	smp_bit_3 = 4'b0101
+	smp_bit_4 = 4'b0110
+	smp_bit_5 = 4'b0111
+	smp_bit_6 = 4'b1000
+	smp_bit_7 = 4'b1001
+	smp_bit_start = 4'b0001
+	smp_bit_stop = 4'b1010
+	wait_del_flag = 4'b1011
+Module <Receiver> is correct for synthesis.
+ 
+Analyzing module <Transmitter> in library <work>.
+	bit_0 = 4'b0010
+	bit_1 = 4'b0011
+	bit_2 = 4'b0100
+	bit_3 = 4'b0101
+	bit_4 = 4'b0110
+	bit_5 = 4'b0111
+	bit_6 = 4'b1000
+	bit_7 = 4'b1001
+	bit_start = 4'b0001
+	bit_stop = 4'b1010
+	get_del_flag = 4'b1100
+	idle = 4'b0000
+	wait_for_del_flag = 4'b1011
+Module <Transmitter> is correct for synthesis.
+ 
+Analyzing module <Controller> in library <work>.
+Module <Controller> is correct for synthesis.
+ 
+Analyzing module <LCD_Module> in library <work>.
+Module <LCD_Module> is correct for synthesis.
+ 
+Analyzing module <Taktteiler> in library <work>.
+Module <Taktteiler> is correct for synthesis.
+ 
+Analyzing module <WriteAsciiLCD> in library <work>.
+	buffer = 4'b0000
+	write_1 = 4'b0001
+	write_2 = 4'b0010
+	write_3 = 4'b0011
+	write_4 = 4'b0100
+	write_wait_for_next_start = 4'b0101
+Module <WriteAsciiLCD> is correct for synthesis.
+ 
+Analyzing module <Entprellungs> in library <work>.
+Module <Entprellungs> is correct for synthesis.
+ 
+Analyzing module <InitLCD> in library <work>.
+	display_clear = 4'b0110
+	display_clear_wait_send = 4'b0111
+	display_on = 4'b0100
+	display_on_wait_send = 4'b0101
+	entry_model_set = 4'b1000
+	entry_model_set_wait_send = 4'b1001
+	function_set = 4'b0010
+	function_set_wait_send = 4'b0011
+	init_finish = 4'b1010
+	power_on_wait_send = 4'b0001
+Module <InitLCD> is correct for synthesis.
+ 
+Analyzing module <Mux21> in library <work>.
+Module <Mux21> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <RW_btn_lcd> in unit <WriteAsciiLCD> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <RS_btn_lcd> in unit <WriteAsciiLCD> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <RW_init_lcd> in unit <InitLCD> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <RS_init_lcd> in unit <InitLCD> has a constant value of 0 during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <Controller>.
+    Related source file is "Controller.v".
+    Found 8-bit register for signal <lcd_data>.
+    Found 1-bit register for signal <start>.
+    Found 1-bit register for signal <rx_complete_del_flag>.
+    Found 8-bit register for signal <buffer>.
+    Summary:
+	inferred  18 D-type flip-flop(s).
+Unit <Controller> synthesized.
+
+
+Synthesizing Unit <Baudratengenerator>.
+    Related source file is "Baudratengenerator.v".
+WARNING:Xst:2110 - Clock of register <clk_dez> seems to be also used in the data or control logic of that element.
+    Found 1-bit register for signal <tx_clk>.
+    Found 1-bit register for signal <clk_dez>.
+    Found 10-bit down counter for signal <count>.
+    Found 4-bit down counter for signal <count_osr>.
+    Summary:
+	inferred   2 Counter(s).
+	inferred   2 D-type flip-flop(s).
+Unit <Baudratengenerator> synthesized.
+
+
+Synthesizing Unit <Receiver>.
+    Related source file is "Receiver.v".
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 12                                             |
+    | Transitions        | 29                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 20                                             |
+    | Clock              | rx_clk                    (rising_edge)        |
+    | Reset              | reset_n                   (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 0000                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit register for signal <rx_data>.
+    Found 1-bit register for signal <rx_complete_flag>.
+    Found 1-bit register for signal <last_value>.
+    Found 1-bit register for signal <new_value>.
+    Found 4-bit register for signal <one_cnt>.
+    Found 4-bit adder for signal <one_cnt$addsub0000>.
+    Found 4-bit register for signal <smp_cnt>.
+    Found 4-bit adder for signal <smp_cnt$share0000> created at line 58.
+    Found 4-bit comparator greatequal for signal <state$cmp_ge0000> created at line 81.
+    Found 4-bit comparator greatequal for signal <state$cmp_ge0001> created at line 269.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  19 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+Unit <Receiver> synthesized.
+
+
+Synthesizing Unit <Transmitter>.
+    Related source file is "Transmitter.v".
+INFO:Xst:1799 - State 0010 is never reached in FSM <state>.
+INFO:Xst:1799 - State 0001 is never reached in FSM <state>.
+INFO:Xst:1799 - State 0011 is never reached in FSM <state>.
+INFO:Xst:1799 - State 0100 is never reached in FSM <state>.
+INFO:Xst:1799 - State 0101 is never reached in FSM <state>.
+INFO:Xst:1799 - State 0110 is never reached in FSM <state>.
+INFO:Xst:1799 - State 0111 is never reached in FSM <state>.
+INFO:Xst:1799 - State 1000 is never reached in FSM <state>.
+INFO:Xst:1799 - State 1001 is never reached in FSM <state>.
+INFO:Xst:1799 - State 1010 is never reached in FSM <state>.
+INFO:Xst:1799 - State 1011 is never reached in FSM <state>.
+INFO:Xst:1799 - State 1100 is never reached in FSM <state>.
+    Found finite state machine <FSM_1> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 1                                              |
+    | Transitions        | 1                                              |
+    | Inputs             | 0                                              |
+    | Outputs            | 1                                              |
+    | Clock              | tx_clk                    (rising_edge)        |
+    | Reset              | reset_n                   (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 0000                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <tx_busy>.
+    Found 1-bit register for signal <TXD>.
+    Found 1-bit register for signal <tx_complete_flag>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   3 D-type flip-flop(s).
+Unit <Transmitter> synthesized.
+
+
+Synthesizing Unit <Taktteiler>.
+    Related source file is "Taktteiler.v".
+    Found 10-bit up counter for signal <out>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <Taktteiler> synthesized.
+
+
+Synthesizing Unit <InitLCD>.
+    Related source file is "InitLCD.v".
+    Found finite state machine <FSM_2> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 10                                             |
+    | Transitions        | 15                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 10                                             |
+    | Clock              | clk_1024                  (rising_edge)        |
+    | Reset              | reset_n                   (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 0001                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <E_init_lcd>.
+    Found 8-bit register for signal <data_init_lcd>.
+    Found 1-bit register for signal <init_complete_flag>.
+    Found 16-bit register for signal <count>.
+    Found 16-bit adder for signal <count$share0000> created at line 55.
+    Found 16-bit comparator greatequal for signal <state$cmp_ge0000> created at line 57.
+    Found 16-bit comparator greatequal for signal <state$cmp_ge0001> created at line 75.
+    Found 16-bit comparator greatequal for signal <state$cmp_ge0002> created at line 113.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  26 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   3 Comparator(s).
+Unit <InitLCD> synthesized.
+
+
+Synthesizing Unit <Mux21>.
+    Related source file is "Mux21.v".
+Unit <Mux21> synthesized.
+
+
+Synthesizing Unit <Entprellungs>.
+    Related source file is "Entprellungs.v".
+    Found 1-bit register for signal <prell_flag>.
+    Found 16-bit register for signal <prell_counter>.
+    Found 16-bit adder for signal <prell_counter$addsub0000> created at line 44.
+    Found 16-bit comparator greatequal for signal <prell_counter$cmp_ge0000> created at line 40.
+    Found 16-bit comparator less for signal <prell_flag$cmp_lt0000> created at line 40.
+    Summary:
+	inferred  17 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+Unit <Entprellungs> synthesized.
+
+
+Synthesizing Unit <UART_Module>.
+    Related source file is "UART_Module.v".
+Unit <UART_Module> synthesized.
+
+
+Synthesizing Unit <WriteAsciiLCD>.
+    Related source file is "WriteAsciiLCD.v".
+    Found finite state machine <FSM_3> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 6                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 1                                              |
+    | Outputs            | 5                                              |
+    | Clock              | clk_1024                  (rising_edge)        |
+    | Reset              | reset_n                   (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 0000                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <E_btn_lcd>.
+    Found 8-bit register for signal <data_btn_lcd>.
+    Found 8-bit register for signal <b>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  17 D-type flip-flop(s).
+Unit <WriteAsciiLCD> synthesized.
+
+
+Synthesizing Unit <LCD_Module>.
+    Related source file is "LCD_Module.v".
+WARNING:Xst:646 - Signal <out<8:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <LCD_Module> synthesized.
+
+
+Synthesizing Unit <UART_zu_LCD>.
+    Related source file is "UART_zu_LCD.v".
+WARNING:Xst:646 - Signal <tx_complete_flag> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <tx_busy> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <TXD> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <UART_zu_LCD> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 4
+ 16-bit adder                                          : 2
+ 4-bit adder                                           : 2
+# Counters                                             : 3
+ 10-bit down counter                                   : 1
+ 10-bit up counter                                     : 1
+ 4-bit down counter                                    : 1
+# Registers                                            : 31
+ 1-bit register                                        : 22
+ 16-bit register                                       : 2
+ 4-bit register                                        : 2
+ 8-bit register                                        : 5
+# Comparators                                          : 7
+ 16-bit comparator greatequal                          : 4
+ 16-bit comparator less                                : 1
+ 4-bit comparator greatequal                           : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_3> for best encoding.
+Optimizing FSM <lcd/write/state/FSM> on signal <state[1:6]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 000001
+ 0001  | 000010
+ 0010  | 000100
+ 0011  | 001000
+ 0100  | 010000
+ 0101  | 100000
+-------------------
+Analyzing FSM <FSM_2> for best encoding.
+Optimizing FSM <lcd/init/state/FSM> on signal <state[1:10]> with one-hot encoding.
+---------------------
+ State | Encoding
+---------------------
+ 0001  | 0000000001
+ 0010  | 0000000010
+ 0011  | 0000000100
+ 0100  | 0000001000
+ 0101  | 0000010000
+ 0110  | 0000100000
+ 0111  | 0001000000
+ 1000  | 0010000000
+ 1001  | 0100000000
+ 1010  | 1000000000
+---------------------
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <uart/tra/state/FSM> on signal <state[1:4]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 0000
+ 0001  | unreached
+ 0010  | unreached
+ 0011  | unreached
+ 0100  | unreached
+ 0101  | unreached
+ 0110  | unreached
+ 0111  | unreached
+ 1000  | unreached
+ 1001  | unreached
+ 1010  | unreached
+ 1011  | unreached
+ 1100  | unreached
+-------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <uart/rec/state/FSM> on signal <state[1:12]> with one-hot encoding.
+-----------------------
+ State | Encoding
+-----------------------
+ 0000  | 000000000001
+ 0001  | 000000000010
+ 0010  | 000000000100
+ 0011  | 000000001000
+ 0100  | 000000010000
+ 0101  | 000000100000
+ 0110  | 000001000000
+ 0111  | 000010000000
+ 1000  | 000100000000
+ 1001  | 001000000000
+ 1010  | 010000000000
+ 1011  | 100000000000
+-----------------------
+WARNING:Xst:1290 - Hierarchical block <tra> is unconnected in block <uart>.
+   It will be removed from the design.
+WARNING:Xst:1710 - FF/Latch <data_init_lcd_6> (without init value) has a constant value of 0 in block <init>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_init_lcd_7> (without init value) has a constant value of 0 in block <init>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 4
+# Adders/Subtractors                                   : 4
+ 16-bit adder                                          : 2
+ 4-bit adder                                           : 2
+# Counters                                             : 3
+ 10-bit down counter                                   : 1
+ 10-bit up counter                                     : 1
+ 4-bit down counter                                    : 1
+# Registers                                            : 102
+ Flip-Flops                                            : 102
+# Comparators                                          : 7
+ 16-bit comparator greatequal                          : 4
+ 16-bit comparator less                                : 1
+ 4-bit comparator greatequal                           : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <tx_complete_flag> (without init value) has a constant value of 0 in block <Transmitter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <tx_busy> (without init value) has a constant value of 0 in block <Transmitter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_init_lcd_6> (without init value) has a constant value of 0 in block <InitLCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_init_lcd_7> (without init value) has a constant value of 0 in block <InitLCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <uart/tra/TXD> of sequential type is unconnected in block <UART_zu_LCD>.
+
+Optimizing unit <UART_zu_LCD> ...
+
+Optimizing unit <Controller> ...
+
+Optimizing unit <Receiver> ...
+
+Optimizing unit <InitLCD> ...
+
+Optimizing unit <Entprellungs> ...
+
+Optimizing unit <WriteAsciiLCD> ...
+
+Optimizing unit <Baudratengenerator> ...
+WARNING:Xst:2677 - Node <uart/baud/count_osr_3> of sequential type is unconnected in block <UART_zu_LCD>.
+WARNING:Xst:2677 - Node <uart/baud/count_osr_2> of sequential type is unconnected in block <UART_zu_LCD>.
+WARNING:Xst:2677 - Node <uart/baud/count_osr_1> of sequential type is unconnected in block <UART_zu_LCD>.
+WARNING:Xst:2677 - Node <uart/baud/count_osr_0> of sequential type is unconnected in block <UART_zu_LCD>.
+WARNING:Xst:2677 - Node <uart/baud/tx_clk> of sequential type is unconnected in block <UART_zu_LCD>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block UART_zu_LCD, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 143
+ Flip-Flops                                            : 143
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : UART_zu_LCD.ngr
+Top Level Output File Name         : UART_zu_LCD
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 14
+
+Cell Usage :
+# BELS                             : 269
+#      GND                         : 1
+#      INV                         : 5
+#      LUT1                        : 39
+#      LUT2                        : 28
+#      LUT3                        : 20
+#      LUT4                        : 12
+#      LUT5                        : 28
+#      LUT6                        : 54
+#      MUXCY                       : 39
+#      VCC                         : 1
+#      XORCY                       : 42
+# FlipFlops/Latches                : 143
+#      FDC                         : 78
+#      FDCE                        : 35
+#      FDCPE                       : 9
+#      FDE                         : 8
+#      FDP                         : 2
+#      FDPE                        : 11
+# Clock Buffers                    : 3
+#      BUFG                        : 2
+#      BUFGP                       : 1
+# IO Buffers                       : 13
+#      IBUF                        : 2
+#      OBUF                        : 11
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 5vlx50tff1136-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             143  out of  28800     0%  
+ Number of Slice LUTs:                  186  out of  28800     0%  
+    Number used as Logic:               186  out of  28800     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    223
+   Number with an unused Flip Flop:      80  out of    223    35%  
+   Number with an unused LUT:            37  out of    223    16%  
+   Number of fully used LUT-FF pairs:   106  out of    223    47%  
+   Number of unique control sets:        22
+
+IO Utilization: 
+ Number of IOs:                          14
+ Number of bonded IOBs:                  14  out of    480     2%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                3  out of     32     9%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 38    |
+uart/baud/clk_dez1                 | BUFG                   | 31    |
+lcd/t/out_91                       | BUFG                   | 74    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+----------------------------------------------+------------------------+-------+
+Control Signal                                | Buffer(FF name)        | Load  |
+----------------------------------------------+------------------------+-------+
+con/reset_n_inv(uart/rec/reset_n_inv1_INV_0:O)| NONE(con/lcd_data_0)   | 135   |
+RW_OBUF(XST_GND:G)                            | NONE(uart/baud/count_0)| 9     |
+----------------------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 3.605ns (Maximum Frequency: 277.393MHz)
+   Minimum input arrival time before clock: 3.021ns
+   Maximum output required time after clock: 4.118ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 3.037ns (frequency: 329.272MHz)
+  Total number of paths / destination ports: 196 / 29
+-------------------------------------------------------------------------
+Delay:               3.037ns (Levels of Logic = 3)
+  Source:            uart/baud/count_4 (FF)
+  Destination:       uart/baud/clk_dez (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: uart/baud/count_4 to uart/baud/clk_dez
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCPE:C->Q            6   0.471   0.737  uart/baud/count_4 (uart/baud/count_4)
+     LUT3:I0->O            1   0.094   0.480  uart/baud/count_Msub__sub0000_cy<7>1_SW0 (N9)
+     LUT6:I5->O            8   0.094   0.518  uart/baud/count_Msub__sub0000_cy<7>1 (uart/baud/count_Msub__sub0000_cy<7>)
+     LUT2:I1->O            1   0.094   0.336  uart/baud/clk_dez_and0000_inv1 (uart/baud/clk_dez_and0000_inv)
+     FDCE:CE                   0.213          uart/baud/clk_dez
+    ----------------------------------------
+    Total                      3.037ns (0.966ns logic, 2.071ns route)
+                                       (31.8% logic, 68.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'uart/baud/clk_dez1'
+  Clock period: 2.891ns (frequency: 345.901MHz)
+  Total number of paths / destination ports: 319 / 48
+-------------------------------------------------------------------------
+Delay:               2.891ns (Levels of Logic = 3)
+  Source:            uart/rec/smp_cnt_3 (FF)
+  Destination:       uart/rec/one_cnt_3 (FF)
+  Source Clock:      uart/baud/clk_dez1 rising
+  Destination Clock: uart/baud/clk_dez1 rising
+
+  Data Path: uart/rec/smp_cnt_3 to uart/rec/one_cnt_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             10   0.471   0.838  uart/rec/smp_cnt_3 (uart/rec/smp_cnt_3)
+     LUT4:I0->O           19   0.094   0.809  uart/rec/state_cmp_eq00001 (uart/rec/state_cmp_eq0000)
+     LUT6:I3->O            3   0.094   0.491  uart/rec/one_cnt_mux0000<3>11 (uart/rec/N7)
+     LUT5:I4->O            1   0.094   0.000  uart/rec/one_cnt_mux0000<3>2 (uart/rec/one_cnt_mux0000<3>)
+     FDC:D                    -0.018          uart/rec/one_cnt_0
+    ----------------------------------------
+    Total                      2.891ns (0.753ns logic, 2.138ns route)
+                                       (26.0% logic, 74.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'lcd/t/out_91'
+  Clock period: 3.605ns (frequency: 277.393MHz)
+  Total number of paths / destination ports: 1516 / 90
+-------------------------------------------------------------------------
+Delay:               3.605ns (Levels of Logic = 4)
+  Source:            lcd/init/count_7 (FF)
+  Destination:       lcd/init/count_15 (FF)
+  Source Clock:      lcd/t/out_91 rising
+  Destination Clock: lcd/t/out_91 rising
+
+  Data Path: lcd/init/count_7 to lcd/init/count_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              5   0.471   0.995  lcd/init/count_7 (lcd/init/count_7)
+     LUT5:I0->O            1   0.094   0.480  lcd/init/state_cmp_ge0002220 (lcd/init/state_cmp_ge0002220)
+     LUT6:I5->O            3   0.094   0.721  lcd/init/state_cmp_ge0002231 (lcd/init/state_cmp_ge0002)
+     LUT6:I3->O           16   0.094   0.562  lcd/init/count_mux0000<0>11 (lcd/init/N0)
+     LUT6:I5->O            1   0.094   0.000  lcd/init/count_mux0000<9>1 (lcd/init/count_mux0000<9>)
+     FDC:D                    -0.018          lcd/init/count_6
+    ----------------------------------------
+    Total                      3.605ns (0.847ns logic, 2.758ns route)
+                                       (23.5% logic, 76.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 21 / 17
+-------------------------------------------------------------------------
+Offset:              3.021ns (Levels of Logic = 4)
+  Source:            reset_n (PAD)
+  Destination:       uart/baud/count_7 (FF)
+  Destination Clock: clk rising
+
+  Data Path: reset_n to uart/baud/count_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            12   0.818   0.849  reset_n_IBUF (reset_n_IBUF)
+     LUT4:I0->O            4   0.094   0.592  uart/baud/count_Q_mux0000<7>11_SW0 (N24)
+     LUT6:I4->O            1   0.094   0.480  uart/baud/count_Q_mux0000<7>41 (uart/baud/N8)
+     LUT6:I5->O            1   0.094   0.000  uart/baud/count_Q_mux0000<7> (uart/baud/count_Q_mux0000<7>)
+     FDCPE:D                  -0.018          uart/baud/count_7
+    ----------------------------------------
+    Total                      3.021ns (1.100ns logic, 1.921ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'uart/baud/clk_dez1'
+  Total number of paths / destination ports: 8 / 5
+-------------------------------------------------------------------------
+Offset:              2.497ns (Levels of Logic = 3)
+  Source:            RXD (PAD)
+  Destination:       uart/rec/one_cnt_3 (FF)
+  Destination Clock: uart/baud/clk_dez1 rising
+
+  Data Path: RXD to uart/rec/one_cnt_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   0.818   1.000  RXD_IBUF (RXD_IBUF)
+     LUT6:I1->O            3   0.094   0.491  uart/rec/one_cnt_mux0000<3>11 (uart/rec/N7)
+     LUT5:I4->O            1   0.094   0.000  uart/rec/one_cnt_mux0000<3>2 (uart/rec/one_cnt_mux0000<3>)
+     FDC:D                    -0.018          uart/rec/one_cnt_0
+    ----------------------------------------
+    Total                      2.497ns (1.006ns logic, 1.491ns route)
+                                       (40.3% logic, 59.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'lcd/t/out_91'
+  Total number of paths / destination ports: 26 / 10
+-------------------------------------------------------------------------
+Offset:              4.118ns (Levels of Logic = 2)
+  Source:            lcd/init/init_complete_flag (FF)
+  Destination:       E (PAD)
+  Source Clock:      lcd/t/out_91 rising
+
+  Data Path: lcd/init/init_complete_flag to E
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             11   0.471   0.765  lcd/init/init_complete_flag (lcd/init/init_complete_flag)
+     LUT3:I0->O            1   0.094   0.336  lcd/mux/data<5>1 (DB_5_OBUF)
+     OBUF:I->O                 2.452          DB_5_OBUF (DB<5>)
+    ----------------------------------------
+    Total                      4.118ns (3.017ns logic, 1.101ns route)
+                                       (73.3% logic, 26.7% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 20.00 secs
+Total CPU time to Xst completion: 20.05 secs
+ 
+--> 
+
+Total memory usage is 167196 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   18 (   0 filtered)
+Number of infos    :   17 (   0 filtered)
+

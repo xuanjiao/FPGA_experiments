@@ -1,0 +1,28 @@
+Command line:
+   ADXL345_HauptModul_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  1075
+
+Wed Jul 26 10:53:25 2017
+
+
+ Elaboration Time: 0.109375 sec
+
+ Current Memory Usage: 471.196 Meg
+
+ Total Signals          : 70
+ Total Nets             : 133
+ Total Signal Drivers   : 27
+ Total Blocks           : 8
+ Total Primitive Blocks : 5
+ Total Processes        : 37
+ Total Traceable Variables  : 79
+ Total Scalar Nets and Variables : 584
+
+ Total Simulation Time: 1.07813 sec
+
+ Current Memory Usage: 313.909 Meg
+
+Wed Jul 26 11:03:58 2017
+

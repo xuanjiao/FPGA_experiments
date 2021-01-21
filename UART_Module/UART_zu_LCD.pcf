@@ -1,0 +1,21 @@
+//! **************************************************************************
+// Written by: Map O.76xd on Fri Jul 07 19:29:37 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "DB<3>" LOCATE = SITE "AC4" LEVEL 1;
+COMP "reset_n" LOCATE = SITE "E7" LEVEL 1;
+COMP "DB<4>" LOCATE = SITE "AB6" LEVEL 1;
+COMP "DB<5>" LOCATE = SITE "AC5" LEVEL 1;
+COMP "DB<6>" LOCATE = SITE "AC7" LEVEL 1;
+COMP "DB<7>" LOCATE = SITE "AD7" LEVEL 1;
+COMP "clk" LOCATE = SITE "AG18" LEVEL 1;
+COMP "RS" LOCATE = SITE "V7" LEVEL 1;
+COMP "RW" LOCATE = SITE "W6" LEVEL 1;
+COMP "RXD" LOCATE = SITE "AG15" LEVEL 1;
+COMP "E" LOCATE = SITE "AA5" LEVEL 1;
+COMP "DB<0>" LOCATE = SITE "Y8" LEVEL 1;
+COMP "DB<1>" LOCATE = SITE "AB7" LEVEL 1;
+COMP "DB<2>" LOCATE = SITE "AB5" LEVEL 1;
+SCHEMATIC END;
+

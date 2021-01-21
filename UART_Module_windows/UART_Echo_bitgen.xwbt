@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=S:\FPGA_Prak\Termin Freitag\UART_Module_windows\UART_Echo.ncd
+OUTFILE=S:\FPGA_Prak\Termin Freitag\UART_Module_windows\UART_Echo.bit
+FAMILY=Virtex5
+PART=xc5vlx50t-1ff1136
+WORKINGDIR=S:\FPGA_Prak\Termin Freitag\UART_Module_windows
+LICENSE=ISE
+USER_INFO=208275213_208276312_208266657_921

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=S:\FPGA_Prak\Termin Freitag\Sieben_Segmenanazeige_BCD\Sieben_Segmenanazeige_BCD.ncd
+OUTFILE=S:\FPGA_Prak\Termin Freitag\Sieben_Segmenanazeige_BCD\Sieben_Segmenanazeige_BCD.bit
+FAMILY=Virtex5
+PART=xc5vlx50t-2ff1136
+WORKINGDIR=S:\FPGA_Prak\Termin Freitag\Sieben_Segmenanazeige_BCD
+LICENSE=ISE
+USER_INFO=208275213_208276312_208266657_921

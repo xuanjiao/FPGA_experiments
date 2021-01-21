@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=S:\FPGA_Prak\Termin Freitag\7-seg\Sieben_Segmenanazeige\impact.xsl
+OUTFILE=S:\FPGA_Prak\Termin Freitag\7-seg\Sieben_Segmenanazeige\impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=S:\FPGA_Prak\Termin Freitag\7-seg\Sieben_Segmenanazeige
+LICENSE=iMPACT
+USER_INFO=iMPACT

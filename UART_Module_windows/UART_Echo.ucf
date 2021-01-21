@@ -1,0 +1,9 @@
+
+
+NET "RXD" LOC = AG15;
+NET "TXD" LOC = AF19;
+NET "clk" LOC = AG18;
+
+# PlanAhead Generated physical constraints 
+
+NET "reset_n" LOC = E7;

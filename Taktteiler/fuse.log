@@ -1,0 +1,24 @@
+Running: C:\Programme\Xilinx\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o S:/FPGA_Prak/Termin Freitag/Taktteiler/Taktteiler_tb_isim_beh.exe -prj S:/FPGA_Prak/Termin Freitag/Taktteiler/Taktteiler_tb_beh.prj work.Taktteiler_tb work.glbl 
+ISim O.76xd (signature 0x2f00eba5)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Analyzing Verilog file "S:/FPGA_Prak/Termin Freitag/Taktteiler/Taktteiler.v" into library work
+Analyzing Verilog file "S:/FPGA_Prak/Termin Freitag/Taktteiler/clock_generator.v" into library work
+Analyzing Verilog file "S:/FPGA_Prak/Termin Freitag/Taktteiler/Taktteiler_tb.v" into library work
+Analyzing Verilog file "C:/Programme/Xilinx/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:329 - "S:/FPGA_Prak/Termin Freitag/Taktteiler/Taktteiler_tb.v" Line 44: Target <out> of concurrent assignment or output port connection should be a net type.
+Completed static elaboration
+Fuse Memory Usage: 64764 KB
+Fuse CPU Usage: 1421 ms
+Compiling module clock_generator
+Compiling module Taktteiler
+Compiling module Taktteiler_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 4 Verilog Units
+Built simulation executable S:/FPGA_Prak/Termin Freitag/Taktteiler/Taktteiler_tb_isim_beh.exe
+Fuse Memory Usage: 69192 KB
+Fuse CPU Usage: 1577 ms

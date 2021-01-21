@@ -1,0 +1,19 @@
+//! **************************************************************************
+// Written by: Map O.76xd on Fri May 19 10:08:16 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "out<9>" LOCATE = SITE "K33" LEVEL 1;
+COMP "reset_n" LOCATE = SITE "E7" LEVEL 1;
+COMP "clk" LOCATE = SITE "AG18" LEVEL 1;
+COMP "out<0>" LOCATE = SITE "B32" LEVEL 1;
+COMP "out<1>" LOCATE = SITE "C32" LEVEL 1;
+COMP "out<2>" LOCATE = SITE "B33" LEVEL 1;
+COMP "out<3>" LOCATE = SITE "E32" LEVEL 1;
+COMP "out<4>" LOCATE = SITE "C34" LEVEL 1;
+COMP "out<5>" LOCATE = SITE "G32" LEVEL 1;
+COMP "out<6>" LOCATE = SITE "F33" LEVEL 1;
+COMP "out<7>" LOCATE = SITE "J32" LEVEL 1;
+COMP "out<8>" LOCATE = SITE "G33" LEVEL 1;
+SCHEMATIC END;
+

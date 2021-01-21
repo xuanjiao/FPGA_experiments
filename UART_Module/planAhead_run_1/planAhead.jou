@@ -1,0 +1,56 @@
+#-----------------------------------------------------------
+# PlanAhead v13.3
+# Build 147507 by hdbuild on Tue Oct  4 19:03:28 MDT 2011
+# Start of session at: Fri Jul 07 19:24:31 2017
+# Process ID: 800
+# Log file: S:/FPGA_Prak/Termin Freitag/UART_Module/planAhead_run_1/planAhead.log
+# Journal file: S:/FPGA_Prak/Termin Freitag/UART_Module/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {S:/FPGA_Prak/Termin Freitag/UART_Module/pa.fromHdl.tcl}
+set_property loc "" [get_ports [list  {DB[0]}]]
+startgroup
+set_property loc IOB_X2Y71 [get_ports {DB[0]}]
+endgroup
+startgroup
+set_property loc IOB_X2Y76 [get_ports {DB[1]}]
+endgroup
+startgroup
+set_property loc IOB_X2Y74 [get_ports {DB[2]}]
+endgroup
+startgroup
+set_property loc IOB_X2Y79 [get_ports {DB[3]}]
+endgroup
+startgroup
+set_property loc IOB_X2Y77 [get_ports {DB[4]}]
+endgroup
+startgroup
+set_property loc IOB_X2Y78 [get_ports {DB[5]}]
+endgroup
+startgroup
+set_property loc IOB_X2Y73 [get_ports {DB[6]}]
+endgroup
+startgroup
+set_property loc IOB_X2Y72 [get_ports {DB[7]}]
+endgroup
+startgroup
+set_property loc IOB_X2Y75 [get_ports E]
+endgroup
+startgroup
+set_property loc IOB_X2Y56 [get_ports RS]
+endgroup
+startgroup
+set_property loc IOB_X2Y63 [get_ports RW]
+endgroup
+startgroup
+set_property loc IOB_X1Y68 [get_ports RXD]
+endgroup
+startgroup
+set_property loc IOB_X1Y67 [get_ports clk]
+endgroup
+startgroup
+set_property loc IOB_X2Y120 [get_ports reset_n]
+endgroup
+save_design
+exit
+stop_gui

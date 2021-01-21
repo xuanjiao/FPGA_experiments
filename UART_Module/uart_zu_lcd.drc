@@ -1,0 +1,8 @@
+Release 13.3 Drc O.76xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Fri Jul 07 19:31:25 2017
+
+drc -z UART_zu_LCD.ncd UART_zu_LCD.pcf
+
+DRC detected 0 errors and 0 warnings.

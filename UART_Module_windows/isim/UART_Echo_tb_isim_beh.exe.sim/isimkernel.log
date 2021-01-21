@@ -1,0 +1,10 @@
+Command line:
+   UART_Echo_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  2039
+
+Fri Jul 07 16:47:24 2017
+
+
+ Elaboration Time: 0.09375 sec

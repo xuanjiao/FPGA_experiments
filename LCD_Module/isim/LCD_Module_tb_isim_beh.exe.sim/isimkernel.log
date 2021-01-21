@@ -1,0 +1,28 @@
+Command line:
+   LCD_Module_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  1508
+
+Fri Jun 09 13:24:19 2017
+
+
+ Elaboration Time: 0.09375 sec
+
+ Current Memory Usage: 471.155 Meg
+
+ Total Signals          : 60
+ Total Nets             : 71
+ Total Signal Drivers   : 26
+ Total Blocks           : 8
+ Total Primitive Blocks : 5
+ Total Processes        : 34
+ Total Traceable Variables  : 59
+ Total Scalar Nets and Variables : 320
+
+ Total Simulation Time: 44.4531 sec
+
+ Current Memory Usage: 471.155 Meg
+
+Fri Jun 09 13:26:46 2017
+

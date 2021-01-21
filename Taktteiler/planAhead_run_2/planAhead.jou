@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# PlanAhead v13.3
+# Build 147507 by hdbuild on Tue Oct  4 19:03:28 MDT 2011
+# Start of session at: Fri May 19 09:37:03 2017
+# Process ID: 4076
+# Log file: S:/FPGA_Prak/Termin Freitag/Taktteiler/planAhead_run_2/planAhead.log
+# Journal file: S:/FPGA_Prak/Termin Freitag/Taktteiler/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {S:/FPGA_Prak/Termin Freitag/Taktteiler/pa.fromHdl.tcl}
+exit
+stop_gui

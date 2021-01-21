@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=S:\FPGA_Prak\Termin Freitag\impact.xsl
+OUTFILE=S:\FPGA_Prak\Termin Freitag\impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=S:\FPGA_Prak\Termin Freitag
+LICENSE=iMPACT
+USER_INFO=iMPACT

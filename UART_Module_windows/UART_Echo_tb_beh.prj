@@ -1,0 +1,7 @@
+verilog work "Transmitter.v"
+verilog work "Receiver.v"
+verilog work "Baudratengenerator.v"
+verilog work "UART_Module.v"
+verilog work "UART_Echo.v"
+verilog work "UART_Echo_tb.v"
+verilog work "C:/Programme/Xilinx/ISE_DS/ISE//verilog/src/glbl.v"

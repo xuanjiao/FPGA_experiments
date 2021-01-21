@@ -1,0 +1,31 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "S:/FPGA_Prak/Termin Freitag/ADXL345_25.07/ADXL345_HauptModul_tb_isim_beh.exe" -prj "S:/FPGA_Prak/Termin Freitag/ADXL345_25.07/ADXL345_HauptModul_tb_beh.prj" "work.ADXL345_HauptModul_tb" "work.glbl" 
+ISim O.76xd (signature 0x2f00eba5)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Analyzing Verilog file "S:/FPGA_Prak/Termin Freitag/ADXL345_25.07/SPI_Module.v" into library work
+Analyzing Verilog file "S:/FPGA_Prak/Termin Freitag/ADXL345_25.07/SPI_16BitController.v" into library work
+Analyzing Verilog file "S:/FPGA_Prak/Termin Freitag/ADXL345_25.07/SPI_16BitInterface.v" into library work
+Analyzing Verilog file "S:/FPGA_Prak/Termin Freitag/ADXL345_25.07/LED_Controller.v" into library work
+Analyzing Verilog file "S:/FPGA_Prak/Termin Freitag/ADXL345_25.07/ADXL345Controller.v" into library work
+Analyzing Verilog file "S:/FPGA_Prak/Termin Freitag/ADXL345_25.07/ADXL345_Hauptmodul.v" into library work
+Analyzing Verilog file "S:/FPGA_Prak/Termin Freitag/ADXL345_25.07/ADXL345_HauptModul_tb.v" into library work
+Analyzing Verilog file "C:/Programme/Xilinx/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 64764 KB
+Fuse CPU Usage: 1515 ms
+Compiling module ADXL345Controller
+Compiling module SPI_16BitController
+Compiling module SPI_Module
+Compiling module SPI_16BitInterface
+Compiling module LED_Controller
+Compiling module ADXL345_Hauptmodul
+Compiling module ADXL345_HauptModul_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 2 sub-compilation(s) to finish...
+Compiled 8 Verilog Units
+Built simulation executable S:/FPGA_Prak/Termin Freitag/ADXL345_25.07/ADXL345_HauptModul_tb_isim_beh.exe
+Fuse Memory Usage: 90312 KB
+Fuse CPU Usage: 1858 ms

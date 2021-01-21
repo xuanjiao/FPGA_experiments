@@ -1,0 +1,176 @@
+#-----------------------------------------------------------
+# PlanAhead v13.3
+# Build 147507 by hdbuild on Tue Oct  4 19:03:28 MDT 2011
+# Start of session at: Tue Jul 25 13:16:51 2017
+# Process ID: 356
+# Log file: S:/FPGA_Prak/Termin Freitag/ADXL345_25.07/planAhead_run_1/planAhead.log
+# Journal file: S:/FPGA_Prak/Termin Freitag/ADXL345_25.07/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common-78] Attempting to get a license: PlanAhead
+INFO: [Common-82] Got a license: PlanAhead
+INFO: [Common-86] Your PlanAhead license expires in -1698 day(s)
+INFO: [Device-25] Loading parts and site information from C:/Programme/Xilinx/ISE_DS/PlanAhead\parts\arch.xmlParsing RTL primitives file [C:/Programme/Xilinx/ISE_DS/PlanAhead\parts\xilinx\rtl\prims\rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Programme/Xilinx/ISE_DS/PlanAhead\parts\xilinx\rtl\prims\rtl_prims.xml]
+start_gui
+source {S:/FPGA_Prak/Termin Freitag/ADXL345_25.07/pa.fromHdl.tcl}
+# create_project -name ADXL345_25.07 -dir "S:/FPGA_Prak/Termin Freitag/ADXL345_25.07/planAhead_run_1" -part xc5vlx50tff1136-1
+Parsing template File [C:/Programme/Xilinx/ISE_DS/ISE\data\projnav\templates\verilog.xml].
+Finished parsing template File [C:/Programme/Xilinx/ISE_DS/ISE\data\projnav\templates\verilog.xml].
+Parsing template File [C:/Programme/Xilinx/ISE_DS/ISE\data\projnav\templates\vhdl.xml].
+Finished parsing template File [C:/Programme/Xilinx/ISE_DS/ISE\data\projnav\templates\vhdl.xml].
+Parsing template File [C:/Programme/Xilinx/ISE_DS/ISE\data\projnav\templates\ucf.xml].
+Finished parsing template File [C:/Programme/Xilinx/ISE_DS/ISE\data\projnav\templates\ucf.xml].
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property top ADXL345_Hauptmodul $srcset
+# set_property target_constrs_file "ADXL345_Hauptmodul.ucf" [current_fileset -constrset]
+Adding file 'S:\FPGA_Prak\Termin Freitag\ADXL345_25.07\ADXL345_Hauptmodul.ucf' to fileset 'constrs_1'
+CRITICAL WARNING: [Designutils-735] The top module "ADXL345_Hauptmodul" specified for this project can not be validated. The current project is using automatic hierarchy update mode, and hence a new suitable replacement top will be automatically selected. If this is not desired, please change the hierarchy update mode to one of the manual compile order modes first, and then set top to any desired value.
+# set hdlfile [add_files [list {SPI_Module.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {SPI_16BitController.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {SPI_16BitInterface.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {LED_Controller.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {ADXL345Controller.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {ADXL345_Hauptmodul.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# add_files [list {ADXL345_Hauptmodul.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc5vlx50tff1136-1
+INFO: [PlanAhead-58] Using Verific elaboration
+Parsing VHDL file "C:/Programme/Xilinx/ISE_DS/PlanAhead\parts\xilinx\rtl\lib\synplify\synattr.vhd" into library synplify
+Analyzing Verilog file "S:\FPGA_Prak\Termin Freitag\ADXL345_25.07\SPI_Module.v" into library work
+Analyzing Verilog file "S:\FPGA_Prak\Termin Freitag\ADXL345_25.07\SPI_16BitController.v" into library work
+Analyzing Verilog file "S:\FPGA_Prak\Termin Freitag\ADXL345_25.07\SPI_16BitInterface.v" into library work
+Analyzing Verilog file "S:\FPGA_Prak\Termin Freitag\ADXL345_25.07\LED_Controller.v" into library work
+Analyzing Verilog file "S:\FPGA_Prak\Termin Freitag\ADXL345_25.07\ADXL345Controller.v" into library work
+Analyzing Verilog file "S:\FPGA_Prak\Termin Freitag\ADXL345_25.07\ADXL345_Hauptmodul.v" into library work
+INFO: [PlanAhead-430] Reading macro library C:/Programme/Xilinx/ISE_DS/PlanAhead\./parts/xilinx/virtex5/virtex5lx/hd_int_macros.edn
+Parsing EDIF File [C:/Programme/Xilinx/ISE_DS/PlanAhead\./parts/xilinx/virtex5/virtex5lx/hd_int_macros.edn]
+Finished Parsing EDIF File [C:/Programme/Xilinx/ISE_DS/PlanAhead\./parts/xilinx/virtex5/virtex5lx/hd_int_macros.edn]
+INFO: [Device-21] Reading bus macro file C:/Programme/Xilinx/ISE_DS/PlanAhead\./parts/xilinx/virtex5/pr_bus_macros.xmlLoading clock regions from C:/Programme/Xilinx/ISE_DS/PlanAhead\parts/xilinx/virtex5/virtex5lxt/xc5vlx50t/ClockRegion.xml
+Loading clock buffers from C:/Programme/Xilinx/ISE_DS/PlanAhead\parts/xilinx/virtex5/virtex5lxt/xc5vlx50t/ClockBuffers.xml
+Loading package from C:/Programme/Xilinx/ISE_DS/PlanAhead\parts/xilinx/virtex5/virtex5lxt/xc5vlx50t/ff1136/Package.xml
+Loading io standards from C:/Programme/Xilinx/ISE_DS/PlanAhead\./parts/xilinx/virtex5/IOStandards.xml
+INFO: [Device-19] Loading pkg sso from C:/Programme/Xilinx/ISE_DS/PlanAhead\parts/xilinx/virtex5/virtex5lxt/xc5vlx50t/ff1136/SSORules.xml
+Loading list of drcs for the architecture : C:/Programme/Xilinx/ISE_DS/PlanAhead\./parts/xilinx/virtex5/drc.xml
+Parsing UCF File [S:\FPGA_Prak\Termin Freitag\ADXL345_25.07\ADXL345_Hauptmodul.ucf]
+Finished Parsing UCF File [S:\FPGA_Prak\Termin Freitag\ADXL345_25.07\ADXL345_Hauptmodul.ucf]
+INFO: [PlanAhead-566] Unisim Transformation Summary:
+No Unisim elements were transformed.open_rtl_design: Time (s): 21.265w.  Memory (MB): 311.426p 114.086g
+startgroup
+startgroup
+set_property loc IOB_X2Y18 [get_ports CS]
+set_property loc IOB_X2Y18 [get_ports CS]
+endgroup
+endgroup
+startgroup
+startgroup
+set_property loc IOB_X2Y34 [get_ports MISO]
+set_property loc IOB_X2Y34 [get_ports MISO]
+endgroup
+endgroup
+startgroup
+startgroup
+set_property loc IOB_X2Y20 [get_ports MOSI]
+set_property loc IOB_X2Y20 [get_ports MOSI]
+endgroup
+endgroup
+startgroup
+startgroup
+set_property loc IOB_X2Y27 [get_ports SCLK]
+set_property loc IOB_X2Y27 [get_ports SCLK]
+endgroup
+endgroup
+startgroup
+startgroup
+set_property loc IOB_X1Y67 [get_ports clk]
+set_property loc IOB_X1Y67 [get_ports clk]
+endgroup
+endgroup
+startgroup
+startgroup
+set_property loc IOB_X2Y120 [get_ports reset_n]
+set_property loc IOB_X2Y120 [get_ports reset_n]
+endgroup
+endgroup
+startgroup
+startgroup
+set_property loc IOB_X1Y172 [get_ports {SW[0]}]
+set_property loc IOB_X1Y172 [get_ports {SW[0]}]
+endgroup
+endgroup
+startgroup
+startgroup
+set_property loc IOB_X1Y176 [get_ports {SW[1]}]
+set_property loc IOB_X1Y176 [get_ports {SW[1]}]
+endgroup
+endgroup
+startgroup
+startgroup
+set_property loc IOB_X1Y173 [get_ports {SW[2]}]
+set_property loc IOB_X1Y173 [get_ports {SW[2]}]
+endgroup
+endgroup
+startgroup
+startgroup
+set_property loc IOB_X2Y3 [get_ports {led_8bitOutput[0]}]
+set_property loc IOB_X2Y3 [get_ports {led_8bitOutput[0]}]
+endgroup
+endgroup
+startgroup
+startgroup
+set_property loc IOB_X2Y2 [get_ports {led_8bitOutput[1]}]
+set_property loc IOB_X2Y2 [get_ports {led_8bitOutput[1]}]
+endgroup
+endgroup
+startgroup
+startgroup
+set_property loc IOB_X2Y5 [get_ports {led_8bitOutput[2]}]
+set_property loc IOB_X2Y5 [get_ports {led_8bitOutput[2]}]
+endgroup
+endgroup
+startgroup
+startgroup
+set_property loc IOB_X2Y1 [get_ports {led_8bitOutput[3]}]
+set_property loc IOB_X2Y1 [get_ports {led_8bitOutput[3]}]
+endgroup
+endgroup
+startgroup
+startgroup
+set_property loc IOB_X2Y4 [get_ports {led_8bitOutput[4]}]
+set_property loc IOB_X2Y4 [get_ports {led_8bitOutput[4]}]
+endgroup
+endgroup
+startgroup
+startgroup
+set_property loc IOB_X2Y0 [get_ports {led_8bitOutput[5]}]
+set_property loc IOB_X2Y0 [get_ports {led_8bitOutput[5]}]
+endgroup
+endgroup
+startgroup
+startgroup
+set_property loc IOB_X2Y7 [get_ports {led_8bitOutput[6]}]
+set_property loc IOB_X2Y7 [get_ports {led_8bitOutput[6]}]
+endgroup
+endgroup
+startgroup
+startgroup
+set_property loc IOB_X2Y6 [get_ports {led_8bitOutput[7]}]
+set_property loc IOB_X2Y6 [get_ports {led_8bitOutput[7]}]
+endgroup
+endgroup
+save_design
+exit
+stop_gui
+INFO: [PlanAhead-261] Exiting PlanAhead...
+INFO: [Common-83] Releasing license: PlanAhead

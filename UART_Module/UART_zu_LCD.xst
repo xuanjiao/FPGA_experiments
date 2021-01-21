@@ -1,0 +1,5 @@
+set -tmpdir "S:/FPGA_Prak/Termin Freitag/UART_Module/xst/projnav.tmp"
+set -xsthdpdir "S:/FPGA_Prak/Termin Freitag/UART_Module/xst"
+elaborate
+-ifn UART_zu_LCD.prj
+-ifmt mixed

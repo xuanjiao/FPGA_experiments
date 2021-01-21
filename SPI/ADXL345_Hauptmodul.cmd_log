@@ -1,0 +1,16 @@
+xst -intstyle ise -ifn "S:/FPGA_Prak/Termin Freitag/ADXL345_25.07/ADXL345_Hauptmodul.xst" -ofn "S:/FPGA_Prak/Termin Freitag/ADXL345_25.07/ADXL345_Hauptmodul.syr" 
+xst -intstyle ise -ifn "S:/FPGA_Prak/Termin Freitag/ADXL345_25.07/ADXL345_Hauptmodul.xst" -ofn "S:/FPGA_Prak/Termin Freitag/ADXL345_25.07/ADXL345_Hauptmodul.syr" 
+xst -intstyle ise -ifn "S:/FPGA_Prak/Termin Freitag/ADXL345_25.07/ADXL345_Hauptmodul.xst" -ofn "S:/FPGA_Prak/Termin Freitag/ADXL345_25.07/ADXL345_Hauptmodul.syr" 
+xst -intstyle ise -ifn "S:/FPGA_Prak/Termin Freitag/ADXL345_25.07/ADXL345_Hauptmodul.xst" -ofn "S:/FPGA_Prak/Termin Freitag/ADXL345_25.07/ADXL345_Hauptmodul.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim ADXL345_Hauptmodul.ngc ADXL345_Hauptmodul_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ADXL345_Hauptmodul.ucf -p xc5vlx50t-ff1136-1 "ADXL345_Hauptmodul.ngc" ADXL345_Hauptmodul.ngd  
+map -intstyle ise -p xc5vlx50t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o ADXL345_Hauptmodul_map.ncd ADXL345_Hauptmodul.ngd ADXL345_Hauptmodul.pcf 
+par -w -intstyle ise -ol high -mt off ADXL345_Hauptmodul_map.ncd ADXL345_Hauptmodul.ncd ADXL345_Hauptmodul.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml ADXL345_Hauptmodul.twx ADXL345_Hauptmodul.ncd -o ADXL345_Hauptmodul.twr ADXL345_Hauptmodul.pcf -ucf ADXL345_Hauptmodul.ucf 
+bitgen -intstyle ise -f ADXL345_Hauptmodul.ut ADXL345_Hauptmodul.ncd 
+xst -intstyle ise -ifn "S:/FPGA_Prak/Termin Freitag/ADXL345_25.07/ADXL345_Hauptmodul.xst" -ofn "S:/FPGA_Prak/Termin Freitag/ADXL345_25.07/ADXL345_Hauptmodul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ADXL345_Hauptmodul.ucf -p xc5vlx50t-ff1136-1 "ADXL345_Hauptmodul.ngc" ADXL345_Hauptmodul.ngd  
+map -intstyle ise -p xc5vlx50t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o ADXL345_Hauptmodul_map.ncd ADXL345_Hauptmodul.ngd ADXL345_Hauptmodul.pcf 
+par -w -intstyle ise -ol high -mt off ADXL345_Hauptmodul_map.ncd ADXL345_Hauptmodul.ncd ADXL345_Hauptmodul.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml ADXL345_Hauptmodul.twx ADXL345_Hauptmodul.ncd -o ADXL345_Hauptmodul.twr ADXL345_Hauptmodul.pcf -ucf ADXL345_Hauptmodul.ucf 
+bitgen -intstyle ise -f ADXL345_Hauptmodul.ut ADXL345_Hauptmodul.ncd 

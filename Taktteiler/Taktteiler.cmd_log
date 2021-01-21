@@ -1,0 +1,11 @@
+xst -intstyle ise -ifn "S:/FPGA_Prak/Termin Freitag/Taktteiler/Taktteiler.xst" -ofn "S:/FPGA_Prak/Termin Freitag/Taktteiler/Taktteiler.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Taktteiler.ucf -p xc5vlx50t-ff1136-2 "Taktteiler.ngc" Taktteiler.ngd  
+map -intstyle ise -p xc5vlx50t-ff1136-2 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o Taktteiler_map.ncd Taktteiler.ngd Taktteiler.pcf 
+par -w -intstyle ise -ol high -mt off Taktteiler_map.ncd Taktteiler.ncd Taktteiler.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Taktteiler.twx Taktteiler.ncd -o Taktteiler.twr Taktteiler.pcf -ucf Taktteiler.ucf 
+bitgen -intstyle ise -f Taktteiler.ut Taktteiler.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Taktteiler.ucf -p xc5vlx50t-ff1136-2 "Taktteiler.ngc" Taktteiler.ngd  
+map -intstyle ise -p xc5vlx50t-ff1136-2 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o Taktteiler_map.ncd Taktteiler.ngd Taktteiler.pcf 
+par -w -intstyle ise -ol high -mt off Taktteiler_map.ncd Taktteiler.ncd Taktteiler.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Taktteiler.twx Taktteiler.ncd -o Taktteiler.twr Taktteiler.pcf -ucf Taktteiler.ucf 
+bitgen -intstyle ise -f Taktteiler.ut Taktteiler.ncd 

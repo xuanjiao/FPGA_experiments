@@ -1,0 +1,28 @@
+//! **************************************************************************
+// Written by: Map O.76xd on Fri May 26 09:41:14 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "reset_n" LOCATE = SITE "E7" LEVEL 1;
+COMP "clk" LOCATE = SITE "AG18" LEVEL 1;
+COMP "in<0>" LOCATE = SITE "J19" LEVEL 1;
+COMP "in<1>" LOCATE = SITE "L18" LEVEL 1;
+COMP "in<2>" LOCATE = SITE "K18" LEVEL 1;
+COMP "in<3>" LOCATE = SITE "H18" LEVEL 1;
+COMP "sw" LOCATE = SITE "G15" LEVEL 1;
+COMP "out0<0>" LOCATE = SITE "AM12" LEVEL 1;
+COMP "out0<1>" LOCATE = SITE "AM13" LEVEL 1;
+COMP "out0<2>" LOCATE = SITE "AE8" LEVEL 1;
+COMP "out0<3>" LOCATE = SITE "AD10" LEVEL 1;
+COMP "out1<0>" LOCATE = SITE "AC9" LEVEL 1;
+COMP "out0<4>" LOCATE = SITE "AJ11" LEVEL 1;
+COMP "out1<1>" LOCATE = SITE "AB10" LEVEL 1;
+COMP "out0<5>" LOCATE = SITE "AD11" LEVEL 1;
+COMP "out1<2>" LOCATE = SITE "AB8" LEVEL 1;
+COMP "out0<6>" LOCATE = SITE "AD9" LEVEL 1;
+COMP "out1<3>" LOCATE = SITE "AF8" LEVEL 1;
+COMP "out1<4>" LOCATE = SITE "AA9" LEVEL 1;
+COMP "out1<5>" LOCATE = SITE "AE9" LEVEL 1;
+COMP "out1<6>" LOCATE = SITE "AC8" LEVEL 1;
+SCHEMATIC END;
+

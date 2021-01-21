@@ -1,0 +1,11 @@
+xst -intstyle ise -ifn "S:/FPGA_Prak/Termin Freitag/Sieben_Segmenanazeige_BCD/Sieben_Segmenanazeige_BCD.xst" -ofn "S:/FPGA_Prak/Termin Freitag/Sieben_Segmenanazeige_BCD/Sieben_Segmenanazeige_BCD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Sieben_Segmenanazeige_BCD.ucf -p xc5vlx50t-ff1136-2 "Sieben_Segmenanazeige_BCD.ngc" Sieben_Segmenanazeige_BCD.ngd  
+map -intstyle ise -p xc5vlx50t-ff1136-2 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o Sieben_Segmenanazeige_BCD_map.ncd Sieben_Segmenanazeige_BCD.ngd Sieben_Segmenanazeige_BCD.pcf 
+par -w -intstyle ise -ol high -mt off Sieben_Segmenanazeige_BCD_map.ncd Sieben_Segmenanazeige_BCD.ncd Sieben_Segmenanazeige_BCD.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Sieben_Segmenanazeige_BCD.twx Sieben_Segmenanazeige_BCD.ncd -o Sieben_Segmenanazeige_BCD.twr Sieben_Segmenanazeige_BCD.pcf -ucf Sieben_Segmenanazeige_BCD.ucf 
+bitgen -intstyle ise -f Sieben_Segmenanazeige_BCD.ut Sieben_Segmenanazeige_BCD.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Sieben_Segmenanazeige_BCD.ucf -p xc5vlx50t-ff1136-2 "Sieben_Segmenanazeige_BCD.ngc" Sieben_Segmenanazeige_BCD.ngd  
+map -intstyle ise -p xc5vlx50t-ff1136-2 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o Sieben_Segmenanazeige_BCD_map.ncd Sieben_Segmenanazeige_BCD.ngd Sieben_Segmenanazeige_BCD.pcf 
+par -w -intstyle ise -ol high -mt off Sieben_Segmenanazeige_BCD_map.ncd Sieben_Segmenanazeige_BCD.ncd Sieben_Segmenanazeige_BCD.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Sieben_Segmenanazeige_BCD.twx Sieben_Segmenanazeige_BCD.ncd -o Sieben_Segmenanazeige_BCD.twr Sieben_Segmenanazeige_BCD.pcf -ucf Sieben_Segmenanazeige_BCD.ucf 
+bitgen -intstyle ise -f Sieben_Segmenanazeige_BCD.ut Sieben_Segmenanazeige_BCD.ncd 

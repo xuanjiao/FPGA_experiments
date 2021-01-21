@@ -1,0 +1,6 @@
+verilog work "SPI_Module.v"
+verilog work "SPI_16BitController.v"
+verilog work "SPI_16BitInterface.v"
+verilog work "LED_Controller.v"
+verilog work "ADXL345Controller.v"
+verilog work "ADXL345_Hauptmodul.v"

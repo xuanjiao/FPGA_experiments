@@ -1,0 +1,17 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "DB[0]" LOC = Y8;
+NET "DB[1]" LOC = AB7;
+NET "DB[2]" LOC = AB5;
+NET "DB[3]" LOC = AC4;
+NET "DB[4]" LOC = AB6;
+NET "DB[5]" LOC = AC5;
+NET "DB[6]" LOC = AC7;
+NET "DB[7]" LOC = AD7;
+NET "E" LOC = AA5;
+NET "RS" LOC = V7;
+NET "RW" LOC = W6;
+NET "RXD" LOC = AG15;
+NET "clk" LOC = AG18;
+NET "reset_n" LOC = E7;

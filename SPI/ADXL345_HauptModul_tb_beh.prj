@@ -1,0 +1,8 @@
+verilog work "SPI_Module.v"
+verilog work "SPI_16BitController.v"
+verilog work "SPI_16BitInterface.v"
+verilog work "LED_Controller.v"
+verilog work "ADXL345Controller.v"
+verilog work "ADXL345_Hauptmodul.v"
+verilog work "ADXL345_HauptModul_tb.v"
+verilog work "C:/Programme/Xilinx/ISE_DS/ISE//verilog/src/glbl.v"

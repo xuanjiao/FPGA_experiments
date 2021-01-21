@@ -1,0 +1,7 @@
+verilog isim_temp "Transmitter.v"
+verilog isim_temp "Receiver.v"
+verilog isim_temp "Baudratengenerator.v"
+verilog isim_temp "UART_Module.v"
+verilog isim_temp "UART_Echo.v"
+verilog isim_temp "UART_Echo_tb.v"
+verilog isim_temp "C:/Programme/Xilinx/ISE_DS/ISE//verilog/src/glbl.v"

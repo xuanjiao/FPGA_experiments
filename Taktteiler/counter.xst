@@ -1,0 +1,5 @@
+set -tmpdir "S:/FPGA_Prak/Termin Freitag/Taktteiler/xst/projnav.tmp"
+set -xsthdpdir "S:/FPGA_Prak/Termin Freitag/Taktteiler/xst"
+elaborate
+-ifn counter.prj
+-ifmt mixed

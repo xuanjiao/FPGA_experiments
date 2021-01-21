@@ -1,0 +1,4 @@
+verilog isim_temp "Taktteiler.v"
+verilog isim_temp "clock_generator.v"
+verilog isim_temp "Taktteiler_tb.v"
+verilog isim_temp "C:/Programme/Xilinx/ISE_DS/ISE//verilog/src/glbl.v"
